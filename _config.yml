@@ -7,10 +7,9 @@
 
 # Site settings
 title: SonarQube.com News
-email: ""
 description: >
   Stay tuned with the latest new features available on SonarQube.com and
-  be informed upfront of any change or maintainance operations that might
+  be informed upfront of any change or maintenance operations that might
   impact the service.
 baseurl: ""
 url: "https://news.sonarqube.com"
