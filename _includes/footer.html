@@ -1,30 +1,24 @@
 <footer class="site-footer">
-
   <div class="wrapper">
+    <div class="site-footer-wrapper">
+      <ul class="media-list">
+        <li>
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+            <span class="icon icon--rss">{% include icon-rss.svg %}</span>
+            <span class="username">RSS</span>
+          </a>
+        </li>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.twitter_username %}
+        {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
-          {% endif %}
-        </ul>
-      </div>
+        {% endif %}
+      </ul>
 
-      <div class="footer-col footer-col-3">
+      <div class="site-description">
         <p>{{ site.description }}</p>
       </div>
     </div>
-
   </div>
-
 </footer>

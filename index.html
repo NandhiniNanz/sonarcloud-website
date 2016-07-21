@@ -4,16 +4,24 @@ layout: default
 
 <div class="home">
 
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </div>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
+        <div>
+          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        </div>
+
+        <div class="post-footer">
+          <a href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+        </div>
       </li>
     {% endfor %}
   </ul>
