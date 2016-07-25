@@ -4,4 +4,4 @@ title: Legal
 permalink: /legal/
 ---
 
-Legal things for SonarQube.com
+Legal stuff for SonarQube.com
