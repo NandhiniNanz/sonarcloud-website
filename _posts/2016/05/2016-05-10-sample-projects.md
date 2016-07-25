@@ -2,7 +2,7 @@
 layout: post
 title:  "Two sample projects to get started in 2 minutes"
 date:   2016-05-10
-categories: info
+categories: samples
 ---
 So you've activated your account on SonarQube.com and you want to run
 the first analysis on your project right now? Take a look at our two sample
