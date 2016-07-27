@@ -2,7 +2,8 @@
 layout: post
 title:  "Real-life open-source projects analyzed on SonarQube.com"
 date:   2016-06-30
-categories: info
+tags:
+  - Info
 ---
 SonarQube.com can inspect continuously the quality of your source code and detect bugs, vulnerabilities and code smells in more than 20 different languages. Some well known open-source projects have already started using it. Let's take a look at them!
 
