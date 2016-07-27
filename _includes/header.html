@@ -10,14 +10,16 @@
 
     <nav class="site-nav">
       <a class="page-link {% if page.layout == "default" or page.layout == "post" %}active{% endif %}"
-         href="{{ "/" | prepend: site.baseurl }}">News</a>
+          href="{{ "/" | prepend: site.baseurl }}">News</a>
 
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-          <a class="page-link {% if page.url == my_page.url %}active{% endif %}"
-             href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-        {% endif %}
-      {% endfor %}
+      <a class="page-link {% if page.url == "/references/" %}active{% endif %}"
+          href="/references/">They Talk About Us</a>
+
+      <a class="page-link {% if page.url == "/terms-of-service/" %}active{% endif %}"
+          href="/terms-of-service/">Terms of Service</a>
+
+      <a class="page-link {% if page.url == "/about/" %}active{% endif %}"
+          href="/about/">About</a>
     </nav>
   </div>
 </header>
