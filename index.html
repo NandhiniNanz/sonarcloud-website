@@ -8,8 +8,8 @@ layout: default
     {% for post in site.posts %}
       <li>
         <div class="post-meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-          - {{ post.tags | join: ', ' }}
+          {% include post-date.html date=post.date %}
+          {% include post-tags.html tags=post.tags %}
         </div>
 
         <h2>

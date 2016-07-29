@@ -5,8 +5,8 @@ layout: default
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      - {{ page.tags | join: ', ' }}
+      {% include post-date.html date=page.date %}
+      {% include post-tags.html tags=page.tags %}
     </div>
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
   </header>

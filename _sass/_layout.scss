@@ -153,11 +153,25 @@ body {
 }
 
 .post-meta {
-  line-height: 1;
+  line-height: 16px;
   margin-bottom: 5px;
   color: $grey-color;
   font-size: $small-font-size;
   font-weight: 300;
+}
+
+.post-meta-time,
+.post-meta-tags {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.post-meta-tags {
+  margin-left: 20px;
+
+  & > svg {
+    vertical-align: top;
+  }
 }
 
 .post-link {

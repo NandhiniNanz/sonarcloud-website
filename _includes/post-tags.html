@@ -1,0 +1,5 @@
+{% if include.tags %}
+  <span class="post-meta-tags">
+    {% include icon-tags.svg %} {{ include.tags | join: ', ' }}
+  </span>
+{% endif %}
