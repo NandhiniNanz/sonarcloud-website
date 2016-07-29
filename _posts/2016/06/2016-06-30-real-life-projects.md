@@ -8,7 +8,7 @@ tags:
 SonarQube.com can inspect continuously the quality of your source code and detect bugs, vulnerabilities and code smells in more than 20 different languages. Some well known open-source projects have already started using it. Let's take a look at them!
 
 
-# oVirt
+## oVirt
 
 oVirt is a virtualization platform that manages virtual machines, storage and virtualized networks.
 
@@ -17,7 +17,7 @@ oVirt is a virtualization platform that manages virtual machines, storage and vi
 - [Sources](https://github.com/oVirt/ovirt-engine)
 - [See dashboard](https://sonarqube.com/overview?id=org.ovirt.engine%3Aroot)
 
-# SimGrid
+## SimGrid
 
 SimGrid is a scientific instrument to study the behavior of large-scale distributed systems such as Grids, Clouds, HPC or P2P systems.
 
@@ -26,7 +26,7 @@ SimGrid is a scientific instrument to study the behavior of large-scale distribu
 - [Sources](https://github.com/simgrid/simgrid)
 - [See dashboard](https://sonarqube.com/overview?id=simgrid)
 
-# JHipster
+## JHipster
 
 JHipster is a Yeoman generator, used to create a Spring Boot + AngularJS project.
 
@@ -35,7 +35,7 @@ JHipster is a Yeoman generator, used to create a Spring Boot + AngularJS project
 - [Sources](https://github.com/jhipster/jhipster-sample-app)
 - [See dashboard](https://sonarqube.com/overview?id=io.github.jhipster.sample%3Ajhipster-sample-application)
 
-# OpenCover
+## OpenCover
 
 OpenCover is a code coverage tool for .NET 2 and above (Windows OSs only - no MONO), with support for 32 and 64 processes and covers both branch and sequence points.
 

@@ -146,15 +146,15 @@ body {
   list-style: none;
 
   > li + li {
-    margin-top: 30px;
-    padding-top: 30px;
+    margin-top: 40px;
+    padding-top: 40px;
     border-top: 1px solid #e6e6e6;
   }
 }
 
 .post-meta {
   line-height: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: $grey-color;
   font-size: $small-font-size;
   font-weight: 300;
@@ -177,7 +177,7 @@ body {
 .post-link {
   line-height: 1.5;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .post-footer {
@@ -197,34 +197,14 @@ body {
 .post-title {
   line-height: 1.5;
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .post-content {
   margin-bottom: $spacing-unit;
 
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-palm) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-palm) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-palm) {
-      font-size: 18px;
-    }
+  h2, h3, h4, h5, h6 {
+    margin-top: 2 * $spacing-unit;
   }
 }
 

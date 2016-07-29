@@ -10,7 +10,7 @@ the first analysis on your project right now? Take a look at our two sample
 projects to get started in 2 minutes.
 
 
-# Simple project
+## Simple project
 
 [![Build status](https://travis-ci.org/bellingard/multi-language-project.svg?branch=master)](https://travis-ci.org/bellingard/multi-language-project) [![Quality Gate](https://sonarqube.com/api/badges/gate?key=test:multi-language-project)](https://sonarqube.com/dashboard/index/test:multi-language-project)
 
@@ -25,7 +25,7 @@ projects to get started in 2 minutes.
   - Groovy
 
 
-# Multi-module project
+## Multi-module project
 
 [![Build status](https://travis-ci.org/bellingard/multi-language-multi-module-project.svg?branch=master)](https://travis-ci.org/bellingard/multi-language-multi-module-project) [![Quality Gate](https://sonarqube.com/api/badges/gate?key=multi-language-multi-module-project)](https://sonarqube.com/dashboard/index/multi-language-multi-module-project)
 
