@@ -23,6 +23,10 @@ mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar \
     -Dsonar.login=$SONAR_TOKEN
 {% endhighlight %}
 
+## Concrete examples with TravisCI
+
+Feel free to take a look at the [sample projects](/redirects/sample-projects.html) to see more in details how you can configure your GitHub repository to quickly get analyzed using TravisCI.
+
 Enjoy!
 
 [sq-site]: http://www.sonarqube.org
