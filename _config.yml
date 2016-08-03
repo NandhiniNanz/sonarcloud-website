@@ -18,4 +18,5 @@ twitter_username: sonarqube
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:day/:title.html
+# Permalink for news
+permalink: /news/:year/:month/:day/:title.html

@@ -1,16 +1,22 @@
 <header class="site-header">
   <div class="wrapper">
     <a href="https://sonarqube.com/" class="site-logo">
-      <img title="Continuous Code Quality Management"
-           alt="Continuous Code Quality Management"
+      <img title="Go to SonarQube.com"
+           alt="Go to SonarQube.com"
            src="{{ site.logo_url }}"
            width="81"
            height="30">
     </a>
 
     <nav class="site-nav">
-      <a class="page-link {% if page.layout == "default" or page.layout == "post" %}active{% endif %}"
-          href="{{ "/" | prepend: site.baseurl }}">News</a>
+      <!--a class="page-link {% if page.layout == "default" or page.layout == "post" %}active{% endif %}"
+          href="{{ "/" | prepend: site.baseurl }}">Home</a-->
+
+      <a class="page-link {% if page.url == "/about/" %}active{% endif %}"
+          href="/about/">About</a>
+
+      <a class="page-link {% if page.url == "/news/" %}active{% endif %}"
+          href="/news/">News</a>
 
       <a class="page-link {% if page.url == "/references/" %}active{% endif %}"
           href="/references/">They Talk About Us</a>
@@ -20,9 +26,6 @@
 
       <a class="page-link {% if page.url == "/contact/" %}active{% endif %}"
           href="/contact/">Contact</a>
-
-      <a class="page-link {% if page.url == "/about/" %}active{% endif %}"
-          href="/about/">About</a>
     </nav>
   </div>
 </header>
