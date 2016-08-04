@@ -9,7 +9,7 @@ If you're already relying on online ALM services to run your builds, manage your
 
 This online service relies on [SonarQube][sq-site], the widely-adopted open source platform allowing to detect bugs, vulnerabilities and code smells in many different languages.
 
-The service is available for Open Source projects only, free of charge and with fair use. It is currently in Beta version and available only on invitation. Feel free to send an email to nemo AT sonarsource.com with your GitHub Account and the urls of the GitHub projects you'd like to analyze to get such invitation.
+The service is available for Open Source projects only, free of charge and with fair use. It is currently in Beta version and available only on invitation. Feel free to fill a request on the ["Contact" form](/contact/)  with your GitHub Account and the urls of the GitHub projects you'd like to analyze to get such invitation.
 
 ## Getting started in 3 easy steps
 
