@@ -4,10 +4,15 @@ title:
 permalink: /about/
 ---
 
-**[SonarQube.com](https://sonarqube.com)** is a cloud service offered by
-**[SonarSource](http://www.sonarsource.com)** and based on **[SonarQube](http://www.sonarqube.org)**.
+**[SonarQube.com](https://sonarqube.com)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
 
-The service is available for open source projects only, free of charge and with fair use. It is currently in Beta version and available only on invitation. Feel free to send an email to nemo AT sonarsource.com with your GitHub Account and the URL of the GitHub projects you’d like to analyze to get such invitation.
+SonarSource provides SonarQube.com for any open source project, free of charge. The services is provided on a best effort basis and it may happen that it incurs occasional disruptions.
+
+SonarSource expects users of this free service to use it in a reasonable manner, consume what they really need and comply to a certain etiquette:
+- analyses should not be ran too frequently - a dozen of analyses per day is generally sufficient
+- a user should not use the service on hundreds or thousands of projects
+
+The service is currently in Beta version and available only on invitation. Feel free to send an email to nemo AT sonarsource.com with your GitHub Account and the URL of the GitHub projects you’d like to analyze to get such invitation.
 
 ![SonarQube](http://www.sonarqube.org/wp-content/themes/sonarsource.org/images/sonar.png)
 
