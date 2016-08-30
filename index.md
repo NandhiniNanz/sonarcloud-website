@@ -3,16 +3,16 @@ layout: page
 permalink: /
 ---
 
-**[SonarQube.com](https://sonarqube.com)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
+**[SonarQube.com](https://sonarqube.com)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source code quality products **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
 
-SonarSource provides SonarQube.com for any open source project, free of charge. The service is provided on a best effort basis and it may happen that it incurs occasional disruptions.
+SonarSource provides SonarQube.com for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions.
 
-SonarSource expects users of this free service to use it in a reasonable manner, consume what they really need and comply to a certain etiquette:
+SonarSource expects users of this free service to use it in a reasonable manner, consume what they really need, and comply with a certain etiquette:
 
-- analyses should not be ran too frequently - a dozen of analyses per day is generally sufficient
-- a user should not use the service on hundreds or thousands of projects
+- analyses should not be run too frequently - no more than a dozen per day is generally quite sufficient
+- a single account should not be used to analyze hundreds or thousands of projects
 
-The service is currently in Beta version and available only on invitation. Feel free to fill a request on the ["Contact" page](/contact/).
+The service is currently in Beta, and available on an invitation-only basis. Feel free to submit a request for an invitation on the ["Contact" page](/contact/).
 
 
 ![SonarQube](/images/sonar.png)
