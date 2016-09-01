@@ -19,11 +19,11 @@ Connect with your GitHub account on [SonarQube.com](https://sonarqube.com), crea
 3. Build your project (from wherever you want) and then execute the following command line:
 
 {% highlight sh %}
-# Example given for Maven projects
 mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar \
     -Dsonar.host.url=https://sonarqube.com \
     -Dsonar.login=$SONAR_TOKEN
 {% endhighlight %}
+*(Example given for Maven projects)*
 
 Once the analysis is successful, your project will appear shortly after in the ["My Account" > "Projects" page](https://sonarqube.com/account/projects).
 
