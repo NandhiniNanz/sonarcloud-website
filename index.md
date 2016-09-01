@@ -12,8 +12,7 @@ SonarSource expects users of this free service to use it in a reasonable manner,
 - analyses should not be run too frequently - no more than a dozen per day is generally quite sufficient
 - a single account should not be used to analyze hundreds or thousands of projects
 
-The service is currently in Beta, and available on an invitation-only basis. Feel free to submit a request for an invitation on the ["Contact" page](/contact/).
-
+To start using the service, simply connect with your GitHub account, generate a token, run a SonarQube analysis on your project and enjoy the results on [SonarQube.com](https://sonarqube.com)!
 
 ![SonarQube](/images/sonarqube_black_128px.png)
 
