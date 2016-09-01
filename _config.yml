@@ -8,9 +8,8 @@
 # Site settings
 title: About SonarQube.com
 description: >
-  Stay tuned with the latest new features available on SonarQube.com and
-  be informed upfront of any change or maintenance operations that might
-  impact the service.
+  SonarQube.com is a service operated by SonarSource, the company that develops
+  and promotes open-source code quality products SonarQube and SonarLint.
 baseurl: ""
 url: "https://news.sonarqube.com"
 logo_url: "https://raw.githubusercontent.com/SonarSource/websites/gh-pages/sonarqube.com_162px.png"

@@ -10,7 +10,7 @@ Connect with your GitHub account on [SonarQube.com](https://sonarqube.com), crea
 
 ## Never used SonarQube.com before?
 
-The service is available for **open source projects**, free of charge and with fair use (see ["About"](/)).
+The service is available for **open source projects**, free of charge and with fair use (read more on the ["About" page](/)).
 
 ### Get started in 3 easy steps
 
@@ -22,7 +22,7 @@ The service is available for **open source projects**, free of charge and with f
 # Example given for Maven projects
 mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar \
     -Dsonar.host.url=https://sonarqube.com \
-    -Dsonar.login=abcdef123456 # Replace with the value of your own token
+    -Dsonar.login=440327d4b5046c1 # Replace with the value of your own token
 {% endhighlight %}
 
 Once the analysis is successful, your project will appear shortly after in the ["My Account" > "Projects" page](https://sonarqube.com/account/projects).
