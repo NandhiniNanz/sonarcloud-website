@@ -18,6 +18,16 @@ SonarSource expects users of this free service to use it in a reasonable manner,
 
 To start using the service, simply connect with your GitHub account, generate a token, run a SonarQube analysis on your project and enjoy the results on [SonarQube.com](https://sonarqube.com)!
 
+### Supported Languages
+
+All the following languages are supported on SonarQube.com, powered by SonarSource home-made analyzers:
+
+| [Java]        | [C / C++]       | [C#]             | [COBOL]     | [ABAP]   |
+| [JavaScript]  | [Objective C]   | [VB.NET]         | [PL/SQL]    | [Flex]   |
+| [PHP]         | [Swift]         | [Visual Basic]   | [PL/I]      | [XML]    |
+| [HTML]        | [Python]        | [Groovy]         | [RPG]       |          |
+{:.languages}
+
 ### About SonarQube
 
 ![SonarQube](/images/sonarqube_black_128px.png)
@@ -25,3 +35,23 @@ To start using the service, simply connect with your GitHub account, generate a 
 [SonarQube](http://www.sonarqube.org) is a widely adopted open source platform to inspect continuously the
 quality of source code and detect bugs, vulnerabilities and code smells in more
 than 20 different languages.
+
+[Java]: http://redirect.sonarsource.com/plugins/java.html
+[JavaScript]: http://redirect.sonarsource.com/plugins/javascript.html
+[PHP]: http://redirect.sonarsource.com/plugins/php.html
+[HTML]: http://redirect.sonarsource.com/plugins/web.html
+[C / C++]: http://redirect.sonarsource.com/plugins/cpp.html
+[Objective C]: http://redirect.sonarsource.com/plugins/objectivec.html
+[Swift]: http://redirect.sonarsource.com/plugins/swift.html
+[Python]: http://redirect.sonarsource.com/plugins/python.html
+[C#]: http://redirect.sonarsource.com/plugins/csharp.html
+[VB.NET]: http://redirect.sonarsource.com/plugins/vbnet.html
+[Visual Basic]: http://redirect.sonarsource.com/plugins/vb.html
+[Groovy]: http://redirect.sonarsource.com/plugins/groovy.html
+[COBOL]: http://redirect.sonarsource.com/plugins/cobol.html
+[PL/SQL]: http://redirect.sonarsource.com/plugins/plsql.html
+[PL/I]: http://redirect.sonarsource.com/plugins/pli.html
+[RPG]: http://redirect.sonarsource.com/plugins/rpg.html
+[ABAP]: http://redirect.sonarsource.com/plugins/abap.html
+[Flex]: http://redirect.sonarsource.com/plugins/flex.html
+[XML]: http://redirect.sonarsource.com/plugins/xml.html
