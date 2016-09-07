@@ -20,7 +20,7 @@ To start using the service, simply connect with your GitHub account, generate a 
 
 ### Supported Languages
 
-All the following languages are supported on SonarQube.com, powered by SonarSource home-made analyzers:
+All the following languages are supported on SonarQube.com, powered by SonarSource home-made analyzers (click on the link to access the documentation specific to a language):
 
 | [Java]        | [C / C++]       | [C#]             | [COBOL]     | [ABAP]   |
 | [JavaScript]  | [Objective C]   | [VB.NET]         | [PL/SQL]    | [Flex]   |
