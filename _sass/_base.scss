@@ -188,27 +188,3 @@ pre {
      font-weight: bold;
    }
  }
-
-/**
- * Form
- */
-
-form {
-  font-weight: bold;
-}
-
-form input, form textarea {
-  font-size: $base-font-size;
-}
-
-// Don't know why, but needs to be forced otherwise not taken into account while
-// it is supposed to be inherited from body
-form textarea {
-  font-family: $base-font-family;
-}
-
-form input[type="submit"] {
-  width: 150px;
-  height: 30px;
-  font-weight: bold;
-}
