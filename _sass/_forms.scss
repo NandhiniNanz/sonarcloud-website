@@ -30,6 +30,10 @@ textarea {
 
 input {
   width: 300px;
+
+  &[name="_gotcha"] {
+    display: none !important;
+  }
 }
 
 textarea {
