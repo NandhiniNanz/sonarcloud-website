@@ -18,6 +18,11 @@ SonarSource expects users of this free service to use it in a reasonable manner,
 
 To start using the service, simply connect with your GitHub account, generate a token, run a SonarQube analysis on your project and enjoy the results on [SonarQube.com](https://sonarqube.com)!
 
+You can read the two following posts to help you get started quickly:
+
+- [Continuously analyze the source code of your open source projects!](https://about.sonarqube.com/news/2016/05/02/continuous-analysis-for-oss-projects.html)
+- [Two sample projects to get started in 2 minutes](https://about.sonarqube.com/news/2016/05/10/sample-projects.html)
+
 ### Supported Languages
 
 All the following languages are supported on SonarQube.com, powered by SonarSource home-made analyzers (click on the link to access the documentation specific to a language):
