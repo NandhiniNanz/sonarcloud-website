@@ -1,0 +1,286 @@
+---
+layout: default
+permalink: /get-started/
+---
+<section id="tutorial" class="tutorial">
+  <h1>Want to get started quickly on SonarQube.com?</h1>
+  <p>Just follow the 3 steps!</p>
+
+  <ul class="tutorial-list wrapper active">
+    <li id="step-log-in" class="active">
+      <h4>Log in on SonarQube.com</h4>
+      <p>
+        You just need to have a GitHub account and to click on
+        <strong><a href="https://sonarqube.com/sessions/new">"Log in with GitHub"</a></strong>.
+      </p>
+    </li>
+
+    <li id="step-generate-token" class="active">
+      <h4>Generate a token</h4>
+      <p>
+        Just go to
+        <strong><a href="https://sonarqube.com/account/security">"My Account > Security"</a></strong> page.
+      </p>
+    </li>
+
+    <li id="step-language-choice" class="question active">
+      <h4>What is the main language of your project?</h4>
+      <ul class="tabs">
+        <li><a id="option-java" href="#step-java">Java</a></li>
+        <li><a id="option-dotnet" href="#step-dotnet">C# or VB.NET</a></li>
+        <li><a id="option-cfamily" href="#step-cfamily">C, C++, Objective-C</a></li>
+        <li><a id="option-others" href="#step-others">Other (JavaScript, Python, PHP, ...)</a></li>
+      </ul>
+    </li>
+
+    <!-- ********** -->
+    <!-- Java World -->
+    <!-- ********** -->
+    <li id="step-java" class="option-java question animate-in hidden">
+      <h4>You are mainly developing in Java: what is your build technology?</h4>
+      <ul class="tabs">
+        <li><a id="option-java-maven" href="#step-java-maven">Maven</a></li>
+        <li><a id="option-java-gradle" href="#step-java-gradle">Gradle</a></li>
+      </ul>
+    </li>
+
+    <!-- Maven -->
+    <li id="step-java-maven" class="option-java-maven question animate-in hidden">
+      <h4>You are using Travis CI to build your project?</h4>
+      <p>Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <ul class="tabs">
+        <li><a id="option-java-maven-travis" href="#step-java-maven-travis">I'm using Travis CI</a></li>
+        <li><a id="option-java-maven-other" href="#step-java-maven-other">I have my own CI solution</a></li>
+      </ul>
+    </li>
+
+    <li id="step-java-maven-travis" class="option-java-maven-travis animate-in hidden">
+      <h4>Activate the Travis Addon and update your YML file</h4>
+      <p>
+        Just take a look at the
+        <a href="https://github.com/bellingard/multi-language-project">sample Maven project</a>
+        and more specifically at the <code>.travis.yml</code> file.
+      </p>
+      <p>
+        Please visit the
+        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <li id="step-java-maven-other" class="option-java-maven-other animate-in hidden">
+      <h4>Execute the SonarQube Scanner for Maven from whereever you want</h4>
+      <p>
+        Running a SonarQube analysis with Maven is straighforward. You just need to run
+        the following command:
+      </p>
+      <pre>
+mvn sonar:sonar \
+    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.login=abcdef0123456789
+      </pre>
+      <p>
+        , where <code>sonar.login</code> is the token that you generated at step #2.
+      </p>
+      <p>
+        You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
+        or whatever other system.
+      </p>
+      <p>
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-maven.html">official documentation of the SonarQube Scanner for Maven</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <!-- Gradle -->
+    <li id="step-java-gradle" class="option-java-gradle question animate-in hidden">
+      <h4>You are using Travis CI to build your project?</h4>
+      <p>Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <ul class="tabs">
+        <li><a id="option-java-gradle-travis" href="#step-java-gradle-travis">I'm using Travis CI</a></li>
+        <li><a id="option-java-gradle-other" href="#step-java-gradle-other">I have my own CI solution</a></li>
+      </ul>
+    </li>
+
+    <li id="step-java-gradle-travis" class="option-java-gradle-travis animate-in hidden">
+      <h4>Activate the Travis Addon and update your YML file</h4>
+      <p>
+        Just take a look at the
+        <a href="XXXXX">sample Gradle project</a>
+        and more specifically at the <code>.travis.yml</code> file.
+        <br/>
+        <strong>TODO: write the sample project</strong>
+      </p>
+      <p>
+        Please visit the
+        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <li id="step-java-gradle-other" class="option-java-gradle-other animate-in hidden">
+      <h4>Execute the SonarQube Scanner for Gradle from whereever you want</h4>
+      <p>
+        Running a SonarQube analysis with Gradle is straighforward. You just need to
+        declare the <code>org.sonarqube</code> plugin in your <code>build.gradle</code>
+        file and run the following command:
+      </p>
+      <pre>
+gradle sonarqube \
+       -Dsonar.host.url=https://sonarqube.com \
+       -Dsonar.login=abcdef0123456789
+      </pre>
+      <p>
+        , where <code>sonar.login</code> is the token that you generated at step #2.
+      </p>
+      <p>
+        You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
+        or whatever other system.
+      </p>
+      <p>
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/gradle.html">official documentation of the SonarQube Scanner for Gradle</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <!-- ********** -->
+    <!-- .NET World -->
+    <!-- ********** -->
+    <li id="step-dotnet" class="option-dotnet question animate-in hidden">
+      <h4>Are using Microsoft Team Services to build your project?</h4>
+      <p>Using Microsoft Team Services is the easiest and quickest way to get your code analysis done.</p>
+      <ul class="tabs">
+        <li><a id="option-dotnet-ts" href="#step-dotnet-ts">I'm using Team Services</a></li>
+        <li><a id="option-dotnet-other" href="#step-dotnet-other">I have my own CI solution</a></li>
+      </ul>
+    </li>
+
+    <li id="step-dotnet-ts" class="option-dotnet-ts animate-in hidden">
+      <h4>Use the SonarQube task in your build definition</h4>
+      <p>
+        Once you've defined a SonarQube entry point that points to SonarQube.com,
+        you just need to add and configure the SonarQube task to your build definition.
+      </p>
+      <p>
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html">official documentation of the SonarQube Scanner for TFS and Team Services</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <li id="step-dotnet-other" class="option-dotnet-other animate-in hidden">
+      <h4>Execute the SonarQube Scanner for MSBuild from whereever you want</h4>
+      <p>
+        You have to download the SonarQube Scanner for MSBuild and then execute
+        it as part of your build process.
+      </p>
+      <p>
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">official documentation of the SonarQube Scanner for MSBuild</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <!-- ********** -->
+    <!-- C Family World -->
+    <!-- ********** -->
+    <li id="step-cfamily" class="option-cfamily question animate-in hidden">
+      <h4>Which compiler are you using?</h4>
+      <ul class="tabs">
+        <li><a id="option-cfamily-ms" href="#step-cfamily-ms">Microsoft Visual C++</a></li>
+        <li><a id="option-cfamily-gcc-clang" href="#step-cfamily-clang-gcc">CLang or GCC</a></li>
+      </ul>
+    </li>
+
+    <li id="step-cfamily-ms" class="option-cfamily-ms animate-in hidden">
+      <h4>Execute the SonarQube Scanner for MSBuild from whereever you want</h4>
+      <p>
+        You have to download the SonarQube Scanner for MSBuild and then execute
+        it as part of your build process.
+        <br/>
+        <strong>TODO: write the sample project => no need for Build Wrapper here?</strong>
+      </p>
+      <p>
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">official documentation of the SonarQube Scanner for MSBuild</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <li id="step-cfamily-gcc-clang" class="option-cfamily-gcc-clang animate-in hidden">
+      <h4>Execute the SonarQube Scanner from whereever you want</h4>
+      <p>
+        You have to download the SonarQube Scanner and the Build Wrapper, and then execute
+        it as part of your build process.
+        <br/>
+        <strong>TODO: write the sample project - otherwise it can be quite complex to know how to do!</strong>
+      </p>
+      <p>
+        Please visit the
+        <a href="http://docs.sonarqube.org/x/pwAv">official documentation of the C/C++/Objective-C plugin</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <!-- ********** -->
+    <!-- Other World -->
+    <!-- ********** -->
+    <li id="step-others" class="option-others question animate-in hidden">
+      <h4>You are using Travis CI to build your project?</h4>
+      <p>Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <ul class="tabs">
+        <li><a id="option-others-travis" href="#step-others-travis">I'm using Travis CI</a></li>
+        <li><a id="option-others-other" href="#step-others-other">I have my own CI solution</a></li>
+      </ul>
+    </li>
+
+    <li id="step-others-travis" class="option-others-travis animate-in hidden">
+      <h4>Activate the Travis Addon and update your YML file</h4>
+      <p>
+        Just take a look at the
+        <a href="https://github.com/bellingard/multi-language-multi-module-project">sample project</a>
+        and more specifically at the <code>.travis.yml</code> and <code>sonar-project.properties</code> files.
+      </p>
+      <p>
+        Please visit the
+        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
+        and the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">official documentation of the SonarQube Scanner</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <li id="step-others-other" class="option-others-other animate-in hidden">
+      <h4>Execute the SonarQube Scanner from whereever you want</h4>
+      <p>
+        You have to download the SonarQube Scanner, write a <code>sonar-project.properties</code>
+        file for your project and then execute the following command:
+      </p>
+      <pre>
+sonar-scanner \
+    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.login=abcdef0123456789
+      </pre>
+      <p>
+        , where <code>sonar.login</code> is the token that you generated at step #2.
+      </p>
+      <p>
+        You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
+        or whatever other system.
+      </p>
+      <p>
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">official documentation of the SonarQube Scanner</a>
+        to know more about it.
+      </p>
+    </li>
+
+  </ul>
+
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/tutorial.js"></script>
+
+</section>

@@ -87,11 +87,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #236a97;
+  color: $link-color;
   text-decoration: none;
 
   &:hover {
-    color: #4b9fd5;
+    color: $link-hover-color;
   }
 }
 

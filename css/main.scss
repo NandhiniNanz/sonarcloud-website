@@ -17,6 +17,8 @@ $spacing-unit:     20px;
 $text-color:       #444;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$link-color:       #236a97;
+$link-hover-color: #4b9fd5;
 
 $header-text-color: #a6a6a6;
 $header-background: #262626;
@@ -53,5 +55,6 @@ $on-laptop:        960px;
         "base",
         "layout",
         "forms",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "tutorial"
 ;
