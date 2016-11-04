@@ -7,9 +7,21 @@ permalink: /
 
 SonarSource provides SonarQube.com for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions.
 
-### Get started!
+### Fair Use
 
-Follow our **["Get Started"](/get-started/)** guide to have your source code analyzed in a couple of minutes.
+SonarSource expects users of this free service to use it in a reasonable manner, consume what they really need, and comply with a certain etiquette:
+
+- analyses should not be run too frequently - no more than a dozen per day is generally quite sufficient
+- a single account should not be used to analyze hundreds or thousands of projects
+
+### How to get started
+
+To start using the service, simply connect with your GitHub account, generate a token, run a SonarQube analysis on your project and enjoy the results on [SonarQube.com](https://sonarqube.com)!
+
+You can read the two following posts to help you get started quickly:
+
+- [Continuously analyze the source code of your open source projects!](https://about.sonarqube.com/news/2016/05/02/continuous-analysis-for-oss-projects.html)
+- [Two sample projects to get started in 2 minutes](https://about.sonarqube.com/news/2016/05/10/sample-projects.html)
 
 ### Supported Languages
 
@@ -20,13 +32,6 @@ All the following languages are supported on SonarQube.com, powered by SonarSour
 | [PHP]         | [Swift]         | [Visual Basic]   | [PL/I]      | [XML]    |
 | [HTML]        | [Python]        | [Groovy]         | [RPG]       |          |
 {:.languages}
-
-### Fair Use
-
-SonarSource expects users of this free service to use it in a reasonable manner, consume what they really need, and comply with a certain etiquette:
-
-- analyses should not be run too frequently - no more than a dozen per day is generally quite sufficient
-- a single account should not be used to analyze hundreds or thousands of projects
 
 ### About SonarQube
 
