@@ -72,16 +72,13 @@ permalink: /get-started/
       <h4>Execute the SonarQube Scanner for Maven from whereever you want</h4>
       <p>
         Running a SonarQube analysis with Maven is straighforward. You just need to run
-        the following command:
+        the following command - <code>sonar.login</code> being the token that you generated at step #2:
       </p>
       <pre>
 mvn sonar:sonar \
     -Dsonar.host.url=https://sonarqube.com \
     -Dsonar.login=abcdef0123456789
       </pre>
-      <p>
-        , where <code>sonar.login</code> is the token that you generated at step #2.
-      </p>
       <p>
         You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
         or whatever other system.
@@ -107,10 +104,9 @@ mvn sonar:sonar \
       <h4>Activate the Travis Addon and update your YML file</h4>
       <p>
         Just take a look at the
-        <a href="XXXXX">sample Gradle project</a>
+        <a href="https://github.com/bellingard/sonar-with-gradle">sample Gradle project</a>
         and more specifically at the <code>.travis.yml</code> file.
         <br/>
-        <strong>TODO: write the sample project</strong>
       </p>
       <p>
         Please visit the
@@ -124,16 +120,14 @@ mvn sonar:sonar \
       <p>
         Running a SonarQube analysis with Gradle is straighforward. You just need to
         declare the <code>org.sonarqube</code> plugin in your <code>build.gradle</code>
-        file and run the following command:
+        file and run the following command - <code>sonar.login</code> being the token
+        that you generated at step #2:
       </p>
       <pre>
 gradle sonarqube \
        -Dsonar.host.url=https://sonarqube.com \
        -Dsonar.login=abcdef0123456789
       </pre>
-      <p>
-        , where <code>sonar.login</code> is the token that you generated at step #2.
-      </p>
       <p>
         You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
         or whatever other system.
@@ -256,16 +250,14 @@ gradle sonarqube \
       <h4>Execute the SonarQube Scanner from whereever you want</h4>
       <p>
         You have to download the SonarQube Scanner, write a <code>sonar-project.properties</code>
-        file for your project and then execute the following command:
+        file for your project and then execute the following command - <code>sonar.login</code>
+        being the token that you generated at step #2:
       </p>
       <pre>
 sonar-scanner \
     -Dsonar.host.url=https://sonarqube.com \
     -Dsonar.login=abcdef0123456789
       </pre>
-      <p>
-        , where <code>sonar.login</code> is the token that you generated at step #2.
-      </p>
       <p>
         You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
         or whatever other system.
