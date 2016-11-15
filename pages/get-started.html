@@ -2,11 +2,11 @@
 layout: default
 permalink: /get-started/
 ---
-<section id="tutorial" class="tutorial">
+<section id="tutorial">
   <h1>Want to get started quickly on SonarQube.com?</h1>
   <p>Just follow the 3 steps!</p>
 
-  <ul class="tutorial-list wrapper active">
+  <ul class="tutorial-list active">
     <li id="step-log-in" class="active">
       <h4>Log in on SonarQube.com</h4>
       <p>
@@ -46,30 +46,20 @@ permalink: /get-started/
 
     <!-- Maven -->
     <li id="step-java-maven" class="option-java-maven question animate-in hidden">
-      <h4>You are using Travis CI to build your project?</h4>
-      <p>Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <p class="note">
+        Run a first analysis from your computer to quickly get your hands on,
+        and then move onto an automated process to benefit from the full power
+        of SonarQube.com.
+      </p>
       <ul class="tabs">
-        <li><a id="option-java-maven-travis" href="#step-java-maven-travis">I'm using Travis CI</a></li>
-        <li><a id="option-java-maven-other" href="#step-java-maven-other">I have my own CI solution</a></li>
+        <li><a id="option-java-maven-local" href="#step-java-maven-local">This is a first analysis</a></li>
+        <li><a id="option-java-maven-travis" href="#step-java-maven-travis">No, I want to automate</a></li>
       </ul>
     </li>
 
-    <li id="step-java-maven-travis" class="option-java-maven-travis animate-in hidden">
-      <h4>Activate the Travis Addon and update your YML file</h4>
-      <p>
-        Just take a look at the
-        <a href="https://github.com/bellingard/multi-language-project">sample Maven project</a>
-        and more specifically at the <code>.travis.yml</code> file.
-      </p>
-      <p>
-        Please visit the
-        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
-        to know more about it.
-      </p>
-    </li>
-
-    <li id="step-java-maven-other" class="option-java-maven-other animate-in hidden">
-      <h4>Execute the SonarQube Scanner for Maven from whereever you want</h4>
+    <li id="step-java-maven-local" class="option-java-maven-local animate-in hidden">
+      <h4>Execute the SonarQube Scanner for Maven from your computer</h4>
       <p>
         Running a SonarQube analysis with Maven is straighforward. You just need to run
         the following command - <code>sonar.login</code> being the token that you generated at step #2:
@@ -80,12 +70,43 @@ mvn sonar:sonar \
     -Dsonar.login=abcdef0123456789
       </pre>
       <p>
-        You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
-        or whatever other system.
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-maven.html">official documentation of the SonarQube Scanner for Maven</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <li id="step-java-maven-travis" class="option-java-maven-travis animate-in hidden">
+      <h4>Activate Travis CI on your project</h4>
+      <p class="note">Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <p>
+        Create a <code>.travis.yml</code> file on your repository with the following content
+        and then activate Travis CI on your project:
+      </p>
+      <pre>
+language: java
+sudo: false
+install: true
+addons:
+  sonarqube:
+    token:
+      secure: "your_token_encrypted_with_travis_encrypt_tool"
+jdk:
+  - oraclejdk8
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+      </pre>
+      <p>
+        Live example:
+        <a href="https://github.com/SonarSource/sq-com_example_java-maven-travis">Java Maven-based project analyzed on SonarQube.com using Travis</a>
       </p>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-maven.html">official documentation of the SonarQube Scanner for Maven</a>
+        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
         to know more about it.
       </p>
     </li>

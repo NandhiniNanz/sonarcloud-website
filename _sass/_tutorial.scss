@@ -24,6 +24,12 @@
       &:last-child {
         margin-bottom: 0
       }
+      &.note {
+        font-size: 14px;
+        font-style: italic;
+        color: $grey-color;
+        margin: 10px 120px 10px;
+      }
     }
     pre {
       margin: 30px 120px 30px;
@@ -42,12 +48,6 @@
       }
       .tabs {
         margin: 20px auto 0;
-      }
-      p {
-        font-size: 14px;
-        font-style: italic;
-        color: $grey-color;
-        margin: 10px 120px 10px;
       }
     }
     .tabs {
@@ -135,10 +135,10 @@
         -webkit-backface-visibility: hidden;
         z-index: 100;
       }
-    }
-    >li.question:after {
-        background-color: $grey-color-light;
-        color: $grey-color-dark !important;
+      &.question:after {
+          background-color: $grey-color-light;
+          color: $grey-color-dark !important;
+      }
     }
   }
 }
