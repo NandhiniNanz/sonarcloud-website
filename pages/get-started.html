@@ -78,7 +78,7 @@ mvn sonar:sonar \
 
     <li id="step-java-maven-travis" class="option-java-maven-travis animate-in hidden">
       <h4>Activate Travis CI on your project</h4>
-      <p class="note">Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <p class="note">Using <a href="https://travis-ci.org/">Travis CI</a> is the easiest and quickest way to get your code analysis done.</p>
       <p>
         Create a <code>.travis.yml</code> file on your repository with the following content
         and then activate Travis CI on your project:
@@ -154,7 +154,7 @@ plugins {
 
     <li id="step-java-gradle-travis" class="option-java-gradle-travis animate-in hidden">
       <h4>Activate Travis CI on your project</h4>
-      <p class="note">Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <p class="note">Using <a href="https://travis-ci.org/">Travis CI</a> is the easiest and quickest way to get your code analysis done.</p>
       <p>
         Once you have declare the <code>org.sonarqube</code> plugin in your <code>build.gradle</code>
         file, create a <code>.travis.yml</code> file on your repository with the following content
@@ -194,36 +194,56 @@ cache:
     <!-- .NET World -->
     <!-- ********** -->
     <li id="step-dotnet" class="option-dotnet question animate-in hidden">
-      <h4>Are using Microsoft Team Services to build your project?</h4>
-      <p>Using Microsoft Team Services is the easiest and quickest way to get your code analysis done.</p>
+      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <p class="note">
+        Run a first analysis from your computer to quickly get your hands on,
+        and then move onto an automated process to benefit from the full power
+        of SonarQube.com.
+      </p>
       <ul class="tabs">
-        <li><a id="option-dotnet-ts" href="#step-dotnet-ts">I'm using Team Services</a></li>
-        <li><a id="option-dotnet-other" href="#step-dotnet-other">I have my own CI solution</a></li>
+        <li><a id="option-dotnet-local" href="#step-dotnet-local">This is a first analysis</a></li>
+        <li><a id="option-dotnet-ts" href="#step-dotnet-ts">No, I want to automate</a></li>
       </ul>
     </li>
 
-    <li id="step-dotnet-ts" class="option-dotnet-ts animate-in hidden">
-      <h4>Use the SonarQube task in your build definition</h4>
+    <li id="step-dotnet-local" class="option-dotnet-local animate-in hidden">
+      <h4>Execute the SonarQube Scanner for MSBuild from your computer</h4>
       <p>
-        Once you've defined a SonarQube entry point that points to SonarQube.com,
-        you just need to add and configure the SonarQube task to your build definition.
+        Once you have
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">downloaded</a>
+        and installed the SonarQube Scanner for MSBuild, running a SonarQube analysis is straighforward.
+        You just need to execute the following commands at the root of your .NET solution:
       </p>
+      <pre>
+SonarQube.Scanner.MSBuild.exe begin \
+                              /k:"your_project_key_that_must_be_unique" \
+                              /d:"sonar.host.url=https://sonarqube.com" \
+                              /d:"sonar.login=your_token"
+
+MsBuild.exe /t:Rebuild
+
+SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=your_token"
+      </pre>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html">official documentation of the SonarQube Scanner for TFS and Team Services</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">official documentation of the SonarQube Scanner for MSBuild</a>
         to know more about it.
       </p>
     </li>
 
-    <li id="step-dotnet-other" class="option-dotnet-other animate-in hidden">
-      <h4>Execute the SonarQube Scanner for MSBuild from whereever you want</h4>
+    <li id="step-dotnet-ts" class="option-dotnet-ts animate-in hidden">
+      <h4>Use Microsoft Team Services to build your project</h4>
+      <p class="note">Using <a href="https://www.visualstudio.com/team-services/">Microsoft Team Services</a> is the easiest and quickest way to get your code analysis done.</p>
       <p>
-        You have to download the SonarQube Scanner for MSBuild and then execute
-        it as part of your build process.
+        Once you have an account on Team Services for your project, follow those 2 steps:
       </p>
+      <ol>
+          <li><a href="http://docs.sonarqube.org/display/SCAN/From+Team+Foundation+Server+2015+or+Visual+Studio+Team+Services#FromTeamFoundationServer2015orVisualStudioTeamServices-AddaSonarQubeServiceendpoint">Define a SonarQube end point</a> that points to SonarQube.com</li>
+          <li><a href="http://docs.sonarqube.org/display/SCAN/From+Team+Foundation+Server+2015+or+Visual+Studio+Team+Services#FromTeamFoundationServer2015orVisualStudioTeamServices-EnabletheSonarQubeanalysisinthebuilddefinition">Enable the SonarQube analysis</a> in the build definition of your project</li>
+      </ol>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">official documentation of the SonarQube Scanner for MSBuild</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html">official documentation of the SonarQube Scanner for TFS and Team Services</a>
         to know more about it.
       </p>
     </li>
@@ -276,7 +296,7 @@ cache:
     <!-- ********** -->
     <li id="step-others" class="option-others question animate-in hidden">
       <h4>You are using Travis CI to build your project?</h4>
-      <p>Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <p>Using <a href="https://travis-ci.org/">Travis CI</a> is the easiest and quickest way to get your code analysis done.</p>
       <ul class="tabs">
         <li><a id="option-others-travis" href="#step-others-travis">I'm using Travis CI</a></li>
         <li><a id="option-others-other" href="#step-others-other">I have my own CI solution</a></li>
