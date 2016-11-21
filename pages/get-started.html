@@ -260,11 +260,28 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=your_token"
     </li>
 
     <li id="step-cfamily-ms" class="option-cfamily-ms animate-in hidden">
-      <h4>Execute the SonarQube Scanner for MSBuild from whereever you want</h4>
+      <h4>Execute the SonarQube Scanner for MSBuild from your computer</h4>
       <p>
-        You have to download the SonarQube Scanner for MSBuild and the Build Wrapper,
-        and then execute it as part of your build process.
+        Once you have downloaded and installed
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">the SonarQube Scanner for MSBuild</a>
+        and <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip">the Build Wrapper</a>, you just need to execute
+        the following commands on your project:
         <br/>
+      </p>
+      <pre>
+SonarQube.Scanner.MSBuild.exe begin \
+                              /k:"your_project_key_that_must_be_unique" \
+                              /d:"sonar.cfamily.build-wrapper-output=bw-output" \
+                              /d:"sonar.host.url=https://sonarqube.com" \
+                              /d:"sonar.login=your_token"
+
+build-wrapper-win-x86-64.exe --out-dir bw-output msbuild /t:rebuild
+
+SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=your_token"
+      </pre>
+      <p>
+        Once you managed to publish a first analysis on SonarQube.com, you can execute those command lines
+        as as part of your build process to automate the analysis of your code.
       </p>
       <p>
         Please visit the
@@ -276,11 +293,30 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=your_token"
     </li>
 
     <li id="step-cfamily-gcc-clang" class="option-cfamily-gcc-clang animate-in hidden">
-      <h4>Execute the SonarQube Scanner from whereever you want</h4>
+      <h4>Execute the SonarQube Scanner from your computer</h4>
       <p>
-        You have to download the SonarQube Scanner and the Build Wrapper, and then execute
-        it as part of your build process.
+        Once you have downloaded and installed the
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">SonarQube Scanner</a>
+        and the Build Wrapper
+        (for <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip">Windows</a>,
+        <a href="https://sonarqube.com/static/cpp/build-wrapper-linux-x86.zip">Linux</a> or
+        <a href="https://sonarqube.com/static/cpp/build-wrapper-macosx-x86.zip">Mac OS</a>),
+        you just need to execute the following commands on your project:
         <br/>
+      </p>
+      <pre>
+build-wrapper-linux-x86-64 --out-dir bw-outputs make clean all
+
+sonar-scanner \
+    -Dsonar.projectKey=your_project_key_that_must_be_unique \
+    -Dsonar.sources=. \
+    -Dsonar.cfamily.build-wrapper-output=bw-output \
+    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.login=abcdef0123456789
+      </pre>
+      <p>
+        Once you managed to publish a first analysis on SonarQube.com, you can execute those command lines
+        as as part of your build process to automate the analysis of your code.
       </p>
       <p>
         Please visit the
