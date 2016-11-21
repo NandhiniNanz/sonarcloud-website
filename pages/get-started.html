@@ -113,49 +113,79 @@ cache:
 
     <!-- Gradle -->
     <li id="step-java-gradle" class="option-java-gradle question animate-in hidden">
-      <h4>You are using Travis CI to build your project?</h4>
-      <p>Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <p class="note">
+        Run a first analysis from your computer to quickly get your hands on,
+        and then move onto an automated process to benefit from the full power
+        of SonarQube.com.
+      </p>
       <ul class="tabs">
-        <li><a id="option-java-gradle-travis" href="#step-java-gradle-travis">I'm using Travis CI</a></li>
-        <li><a id="option-java-gradle-other" href="#step-java-gradle-other">I have my own CI solution</a></li>
+        <li><a id="option-java-gradle-local" href="#step-java-gradle-local">This is a first analysis</a></li>
+        <li><a id="option-java-gradle-travis" href="#step-java-gradle-travis">No, I want to automate</a></li>
       </ul>
     </li>
 
-    <li id="step-java-gradle-travis" class="option-java-gradle-travis animate-in hidden">
-      <h4>Activate the Travis Addon and update your YML file</h4>
-      <p>
-        Just take a look at the
-        <a href="https://github.com/bellingard/sonar-with-gradle">sample Gradle project</a>
-        and more specifically at the <code>.travis.yml</code> file.
-        <br/>
-      </p>
-      <p>
-        Please visit the
-        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
-        to know more about it.
-      </p>
-    </li>
-
-    <li id="step-java-gradle-other" class="option-java-gradle-other animate-in hidden">
-      <h4>Execute the SonarQube Scanner for Gradle from whereever you want</h4>
+    <li id="step-java-gradle-local" class="option-java-gradle-local animate-in hidden">
+      <h4>Execute the SonarQube Scanner for Gradle from your computer</h4>
       <p>
         Running a SonarQube analysis with Gradle is straighforward. You just need to
         declare the <code>org.sonarqube</code> plugin in your <code>build.gradle</code>
-        file and run the following command - <code>sonar.login</code> being the token
+        file:
+      </p>
+      <pre>
+plugins {
+    id "org.sonarqube" version "2.2"
+}     </pre>
+      <p>
+        , and run the following command - <code>sonar.login</code> being the token
         that you generated at step #2:
       </p>
       <pre>
-gradle sonarqube \
+./gradlew sonarqube \
        -Dsonar.host.url=https://sonarqube.com \
        -Dsonar.login=abcdef0123456789
       </pre>
       <p>
-        You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
-        or whatever other system.
+        Please visit the
+        <a href="http://redirect.sonarsource.com/doc/gradle.html">official documentation of the SonarQube Scanner for Gradle</a>
+        to know more about it.
+      </p>
+    </li>
+
+    <li id="step-java-gradle-travis" class="option-java-gradle-travis animate-in hidden">
+      <h4>Activate Travis CI on your project</h4>
+      <p class="note">Using Travis CI is the easiest and quickest way to get your code analysis done.</p>
+      <p>
+        Once you have declare the <code>org.sonarqube</code> plugin in your <code>build.gradle</code>
+        file, create a <code>.travis.yml</code> file on your repository with the following content
+        and then activate Travis CI on your project:
+      </p>
+      <pre>
+language: java
+sudo: false
+install: true
+addons:
+  sonarqube:
+    token:
+      secure: "your_token_encrypted_with_travis_encrypt_tool"
+jdk:
+  - oraclejdk8
+script:
+  - ./gradlew sonarqube
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+    - '$HOME/.gradle'
+    - '.gradle'
+      </pre>
+      <p>
+        Live example:
+        <a href="https://github.com/SonarSource/sq-com_example_java-gradle-travis">Java Gradle-based project analyzed on SonarQube.com using Travis</a>
       </p>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/gradle.html">official documentation of the SonarQube Scanner for Gradle</a>
+        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
         to know more about it.
       </p>
     </li>
