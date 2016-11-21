@@ -295,49 +295,74 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=your_token"
     <!-- Other World -->
     <!-- ********** -->
     <li id="step-others" class="option-others question animate-in hidden">
-      <h4>You are using Travis CI to build your project?</h4>
-      <p>Using <a href="https://travis-ci.org/">Travis CI</a> is the easiest and quickest way to get your code analysis done.</p>
+      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <p class="note">
+        Run a first analysis from your computer to quickly get your hands on,
+        and then move onto an automated process to benefit from the full power
+        of SonarQube.com.
+      </p>
       <ul class="tabs">
-        <li><a id="option-others-travis" href="#step-others-travis">I'm using Travis CI</a></li>
-        <li><a id="option-others-other" href="#step-others-other">I have my own CI solution</a></li>
+        <li><a id="option-others-local" href="#step-others-local">This is a first analysis</a></li>
+        <li><a id="option-others-travis" href="#step-others-travis">No, I want to automate</a></li>
       </ul>
     </li>
 
-    <li id="step-others-travis" class="option-others-travis animate-in hidden">
-      <h4>Activate the Travis Addon and update your YML file</h4>
+    <li id="step-others-local" class="option-others-local animate-in hidden">
+      <h4>Execute the SonarQube Scanner from your computer</h4>
       <p>
-        Just take a look at the
-        <a href="https://github.com/bellingard/multi-language-multi-module-project">sample project</a>
-        and more specifically at the <code>.travis.yml</code> and <code>sonar-project.properties</code> files.
+        Once you have to <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">downloaded</a>
+        and installed the SonarQube Scanner, running a SonarQube analysis is straighforward.
+        You just need to execute the following command at the root of your project - <code>sonar.login</code>
+        being the token that you generated at step #2:
       </p>
+      <pre>
+sonar-scanner \
+    -Dsonar.projectKey=your_project_key_that_must_be_unique \
+    -Dsonar.sources=. \
+    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.login=abcdef0123456789
+      </pre>
       <p>
         Please visit the
-        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
-        and the
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">official documentation of the SonarQube Scanner</a>
         to know more about it.
       </p>
     </li>
 
-    <li id="step-others-other" class="option-others-other animate-in hidden">
-      <h4>Execute the SonarQube Scanner from whereever you want</h4>
+    <li id="step-others-travis" class="option-others-travis animate-in hidden">
+      <h4>Activate Travis CI on your project</h4>
+      <p class="note">Using <a href="https://travis-ci.org/">Travis CI</a> is the easiest and quickest way to get your code analysis done.</p>
       <p>
-        You have to download the SonarQube Scanner, write a <code>sonar-project.properties</code>
-        file for your project and then execute the following command - <code>sonar.login</code>
-        being the token that you generated at step #2:
+        Instead of passing your configuration on the fly while executing the <code>sonar-scanner</code> command,
+        create a <code>sonar-project.properties</code> file to store them.
+      </p>
+      <p>
+        Then, create a <code>.travis.yml</code> file on your repository with the following content
+        and then activate Travis CI on your project:
       </p>
       <pre>
-sonar-scanner \
-    -Dsonar.host.url=https://sonarqube.com \
-    -Dsonar.login=abcdef0123456789
+language: java
+sudo: false
+install: true
+addons:
+  sonarqube:
+    token:
+      secure: "your_token_encrypted_with_travis_encrypt_tool"
+jdk:
+  - oraclejdk8
+script:
+  - sonar-scanner
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
       </pre>
       <p>
-        You can run this command automatically from your own CI tool - may it be Jenkins, Bamboo, TeamCity,
-        or whatever other system.
+        Live example:
+        <a href="https://github.com/SonarSource/sq-com_example_standard-sqscanner-travis">Standard SQ-Scanner-based project analyzed on SonarQube.com using Travis</a>
       </p>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">official documentation of the SonarQube Scanner</a>
+        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
         to know more about it.
       </p>
     </li>
