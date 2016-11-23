@@ -11,15 +11,15 @@ permalink: /get-started/
       <h4>Log in on SonarQube.com</h4>
       <p>
         You just need to have a GitHub account and to click on
-        <strong><a href="https://sonarqube.com/sessions/new">"Log in with GitHub"</a></strong>.
+        <strong><a href="https://sonarqube.com/sessions/new" target="_blank">"Log in with GitHub"</a></strong>.
       </p>
     </li>
 
     <li id="step-generate-token" class="active">
-      <h4>Generate a token</h4>
+      <h4>Generate an authentication token</h4>
       <p>
         At
-        <strong><a href="https://sonarqube.com/account/security">"My Account > Security"</a></strong>.
+        <strong><a href="https://sonarqube.com/account/security" target="_blank">"My Account > Security"</a></strong>.
       </p>
     </li>
 
@@ -73,14 +73,17 @@ mvn sonar:sonar \
       </pre>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-maven.html">official documentation of the SonarQube Scanner for Maven</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-maven.html" target="_blank">official documentation of the SonarQube Scanner for Maven</a>
         for more details.
       </p>
     </li>
 
     <li id="step-java-maven-travis" class="option-java-maven-travis animate-in hidden">
       <h4>Activate Travis CI on your project</h4>
-      <p class="note">Using <a href="https://travis-ci.org/">Travis CI</a> is the quickest and easiest way to analyze your code.</p>
+      <p class="note">
+        Using <a href="https://travis-ci.org/" target="_blank">Travis CI</a> is the quickest and easiest
+        way to analyze your code (but obvioulsy you could do similar configuration on any CI tool).
+      </p>
       <p>
         Create a <code>.travis.yml</code> file in your repository root with the following content
         and then activate Travis CI on your project:
@@ -104,11 +107,11 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_java-maven-travis">Java Maven-based project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_java-maven-travis" target="_blank">Java Maven-based project analyzed on SonarQube.com using Travis</a>
       </p>
       <p>
         Please visit the
-        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
+        <a href="https://docs.travis-ci.com/user/sonarqube/" target="_blank">official documentation of the Travis Addon</a>
         for more details.
       </p>
     </li>
@@ -148,14 +151,17 @@ plugins {
       </pre>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/gradle.html">official documentation of the SonarQube Scanner for Gradle</a>
+        <a href="http://redirect.sonarsource.com/doc/gradle.html" target="_blank">official documentation of the SonarQube Scanner for Gradle</a>
         for more details.
       </p>
     </li>
 
     <li id="step-java-gradle-travis" class="option-java-gradle-travis animate-in hidden">
       <h4>Activate Travis CI on your project</h4>
-      <p class="note">Using <a href="https://travis-ci.org/">Travis CI</a> is the quickest and easiest way to analyze your code.</p>
+      <p class="note">
+        Using <a href="https://travis-ci.org/" target="_blank">Travis CI</a> is the quickest and easiest
+        way to analyze your code (but obvioulsy you could do similar configuration on any CI tool).
+      </p>
       <p>
         Once you have declared the <code>org.sonarqube</code> plugin in your <code>build.gradle</code>
         file, create a <code>.travis.yml</code> file in your repository root with the following content
@@ -182,11 +188,11 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_java-gradle-travis">Java Gradle-based project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_java-gradle-travis" target="_blank">Java Gradle-based project analyzed on SonarQube.com using Travis</a>
       </p>
       <p>
         Please visit the
-        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
+        <a href="https://docs.travis-ci.com/user/sonarqube/" target="_blank">official documentation of the Travis Addon</a>
         for more details.
       </p>
     </li>
@@ -211,8 +217,8 @@ cache:
       <h4>Execute the SonarQube Scanner for MSBuild from your computer</h4>
       <p>
         Once you have
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">downloaded</a>
-        and installed the SonarQube Scanner for MSBuild, running a SonarQube analysis is straighforward.
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">downloaded and installed</a>
+        the SonarQube Scanner for MSBuild, running a SonarQube analysis is straighforward.
         You just need to execute the following commands at the root of your .NET solution. Use the token you generated at step #2 for <code>sonar.login</code>:
       </p>
       <pre>
@@ -227,14 +233,17 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       </pre>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">official documentation of the SonarQube Scanner for MSBuild</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">official documentation of the SonarQube Scanner for MSBuild</a>
         for more details.
       </p>
     </li>
 
     <li id="step-dotnet-ts" class="option-dotnet-ts animate-in hidden">
       <h4>Use Microsoft Team Services to build your project</h4>
-      <p class="note">Using <a href="https://www.visualstudio.com/team-services/">Microsoft Team Services</a> is the quickest and easiest way to analyze your code.</p>
+      <p class="note">
+        Using <a href="https://travis-ci.org/" target="_blank">Travis CI</a> is the quickest and easiest
+        way to analyze your code (but obvioulsy you could do similar configuration on any CI tool).
+      </p>
       <p>
         Once you have an account on Team Services for your project, follow those 2 steps:
       </p>
@@ -244,7 +253,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       </ol>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html">official documentation of the SonarQube Scanner for TFS and Team Services</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html" target="_blank">official documentation of the SonarQube Scanner for TFS and Team Services</a>
         for more details.
       </p>
     </li>
@@ -264,8 +273,8 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       <h4>Execute the SonarQube Scanner for MSBuild from your computer</h4>
       <p>
         Once you have downloaded and installed
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">the SonarQube Scanner for MSBuild</a>
-        and <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip">the Build Wrapper</a>, you just need to execute
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">the SonarQube Scanner for MSBuild</a>
+        and <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip" target="_blank">the Build Wrapper</a>, you just need to execute
         the following commands on your project. Use the token you generated at step #2 for <code>sonar.login</code>:
         <br/>
       </p>
@@ -286,9 +295,9 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       </p>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html">official documentation of the SonarQube Scanner for MSBuild</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">official documentation of the SonarQube Scanner for MSBuild</a>
         and the
-        <a href="http://docs.sonarqube.org/x/pwAv">official documentation of the C/C++/Objective-C plugin</a>
+        <a href="http://docs.sonarqube.org/x/pwAv" target="_blank">official documentation of the C/C++/Objective-C plugin</a>
         for more details.
       </p>
     </li>
@@ -297,7 +306,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       <h4>Execute the SonarQube Scanner from your computer</h4>
       <p>
         Once you have downloaded and installed the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">SonarQube Scanner</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">SonarQube Scanner</a>
         and the Build Wrapper
         (for <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip">Windows</a>,
         <a href="https://sonarqube.com/static/cpp/build-wrapper-linux-x86.zip">Linux</a> or
@@ -321,9 +330,9 @@ sonar-scanner \
       </p>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">official documentation of the SonarQube Scanner</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">official documentation of the SonarQube Scanner</a>
         and the
-        <a href="http://docs.sonarqube.org/x/pwAv">official documentation of the C/C++/Objective-C plugin</a>
+        <a href="http://docs.sonarqube.org/x/pwAv" target="_blank">official documentation of the C/C++/Objective-C plugin</a>
         for more details.
       </p>
     </li>
@@ -347,9 +356,9 @@ sonar-scanner \
     <li id="step-others-local" class="option-others-local animate-in hidden">
       <h4>Execute the SonarQube Scanner from your computer</h4>
       <p>
-        Once you have <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">downloaded</a>
-        and installed the SonarQube Scanner, running a SonarQube analysis is straighforward.
-        You just need to execute the following command at the root of your project. Use the token you generated at step #2 for <code>sonar.login</code>:
+        Once you have <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">downloaded and installed</a>
+        the SonarQube Scanner, running a SonarQube analysis is straighforward. You just need to execute the following command
+        at the root of your project. Use the token you generated at step #2 for <code>sonar.login</code>:
       </p>
       <pre>
 sonar-scanner \
@@ -360,14 +369,17 @@ sonar-scanner \
       </pre>
       <p>
         Please visit the
-        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html">official documentation of the SonarQube Scanner</a>
+        <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">official documentation of the SonarQube Scanner</a>
         for more details.
       </p>
     </li>
 
     <li id="step-others-travis" class="option-others-travis animate-in hidden">
       <h4>Activate Travis CI on your project</h4>
-      <p class="note">Using <a href="https://travis-ci.org/">Travis CI</a> is the quickest and easiest way to analyze your code.</p>
+      <p class="note">
+        Using <a href="https://travis-ci.org/" target="_blank">Travis CI</a> is the quickest and easiest
+        way to analyze your code (but obvioulsy you could do similar configuration on any CI tool).
+      </p>
       <p>
         Instead of passing your configuration on the fly while executing the <code>sonar-scanner</code> command,
         create a <code>sonar-project.properties</code> file to store them.
@@ -394,11 +406,11 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_standard-sqscanner-travis">Standard SQ-Scanner-based project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_standard-sqscanner-travis" target="_blank">Standard SQ-Scanner-based project analyzed on SonarQube.com using Travis</a>
       </p>
       <p>
         Please visit the
-        <a href="https://docs.travis-ci.com/user/sonarqube/">official documentation of the Travis Addon</a>
+        <a href="https://docs.travis-ci.com/user/sonarqube/" target="_blank">official documentation of the Travis Addon</a>
         for more details.
       </p>
     </li>
