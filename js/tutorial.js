@@ -70,6 +70,7 @@
           return function(i, element) {
             var elementId = $(element).attr("id");
             if (elementId.startsWith(currentStep)) {
+              $(element).find("ul.tabs a").removeClass("selected");
               return $(element).addClass("hidden");
             }
           };
