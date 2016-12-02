@@ -12,7 +12,7 @@ description: >
   and promotes open-source code quality products SonarQube and SonarLint.
 baseurl: ""
 url: "https://news.sonarqube.com"
-logo_url: "https://raw.githubusercontent.com/SonarSource/websites/gh-pages/sonarqube.com_162px.png"
+logo_url: "/images/sonarqube.com_162px.png"
 twitter_username: sonarqube
 
 # Build settings
