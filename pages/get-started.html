@@ -389,9 +389,9 @@ sonar-scanner \
         and then activate Travis CI on your project:
       </p>
       <pre>
-language: java
-sudo: false
-install: true
+dist: trusty
+sudo: required
+
 addons:
   sonarqube:
     token:
