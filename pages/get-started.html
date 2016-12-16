@@ -263,7 +263,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       <h4>Which compiler are you using?</h4>
       <ul class="tabs">
         <li><a id="option-cfamily-ms" href="#step-cfamily-ms">Microsoft Visual C++</a></li>
-        <li><a id="option-cfamily-gcc-clang" href="#step-cfamily-clang-gcc">CLang or GCC</a></li>
+        <li><a id="option-cfamily-clang-gcc" href="#step-cfamily-clang-gcc">CLang or GCC</a></li>
       </ul>
     </li>
 
@@ -300,7 +300,21 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       </p>
     </li>
 
-    <li id="step-cfamily-gcc-clang" class="option-cfamily-gcc-clang animate-in hidden">
+    <!-- CLang or GCC -->
+    <li id="step-cfamily-clang-gcc" class="option-cfamily-clang-gcc question animate-in hidden">
+      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <p class="note">
+        Run a first analysis from your computer to get started quickly,
+        and then move to an automated process to benefit from the full power
+        of SonarQube.com.
+      </p>
+      <ul class="tabs">
+        <li><a id="option-cfamily-clang-gcc-local" href="#step-cfamily-clang-gcc-local">This is a first analysis</a></li>
+        <li><a id="option-cfamily-clang-gcc-travis" href="#step-cfamily-clang-gcc-travis">I'm ready to automate</a></li>
+      </ul>
+    </li>
+
+    <li id="step-cfamily-clang-gcc-local" class="option-cfamily-clang-gcc-local animate-in hidden">
       <h4>Execute the SonarQube Scanner from your computer</h4>
       <p>
         Once you have downloaded and installed the
@@ -331,6 +345,46 @@ sonar-scanner \
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">official documentation of the SonarQube Scanner</a>
         and the
         <a href="http://docs.sonarqube.org/x/pwAv" target="_blank">official documentation of the C/C++/Objective-C plugin</a>
+        for more details.
+      </p>
+    </li>
+
+    <li id="step-cfamily-clang-gcc-travis" class="option-cfamily-clang-gcc-travis animate-in hidden">
+      <h4>Activate Travis CI on your project</h4>
+      <p class="note">
+        Using <a href="https://travis-ci.org/" target="_blank">Travis CI</a> is the quickest and easiest
+        way to analyze your code (but obvioulsy you could do similar configuration on any CI tool).
+      </p>
+      <p>
+        Instead of passing your configuration on the fly while executing the <code>sonar-scanner</code> command,
+        create a <code>sonar-project.properties</code> file to store them.
+      </p>
+      <p>
+        Then, create a <code>.travis.yml</code> file in your repository root with the following content
+        and then activate Travis CI on your project:
+      </p>
+      <pre>
+dist: trusty
+sudo: required
+
+addons:
+  sonarqube:
+    token:
+      secure: "your_token_encrypted_with_travis_encrypt_tool"
+script:
+  - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
+  - sonar-scanner
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
+      </pre>
+      <p>
+        Live example:
+        <a href="https://github.com/SonarSource/sq-com_example_c-sqscanner-travis" target="_blank">C project analyzed on SonarQube.com using Travis</a>
+      </p>
+      <p>
+        Please visit the
+        <a href="https://docs.travis-ci.com/user/sonarqube/" target="_blank">official documentation of the Travis Addon</a>
         for more details.
       </p>
     </li>
@@ -404,7 +458,7 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_standard-sqscanner-travis" target="_blank">Standard SQ-Scanner-based project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_standard-sqscanner-travis" target="_blank">Standard project analyzed on SonarQube.com using Travis</a>
       </p>
       <p>
         Please visit the
