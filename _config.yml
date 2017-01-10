@@ -11,7 +11,7 @@ description: >
   SonarQube.com is a service operated by SonarSource, the company that develops
   and promotes open-source code quality products SonarQube and SonarLint.
 baseurl: ""
-url: "https://news.sonarqube.com"
+url: "https://about.sonarqube.com"
 logo_url: "/images/sonarqube.com_162px.png"
 twitter_username: sonarqube
 
