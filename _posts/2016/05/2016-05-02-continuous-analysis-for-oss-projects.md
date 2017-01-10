@@ -3,7 +3,7 @@ layout: post
 title:  "Continuously analyze the source code of your open source projects!"
 date:   2016-05-02
 tags:
-  - Feature
+  - Features
 ---
 If you're already relying on online ALM services to run your builds, manage your source code, track your project activity, ... You're just one-click away from continuously analyzing the quality of your source code with help of SonarQube.com!
 

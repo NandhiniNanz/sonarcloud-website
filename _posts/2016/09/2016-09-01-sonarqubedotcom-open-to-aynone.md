@@ -3,7 +3,7 @@ layout: post
 title:  "SonarQube.com is now open to anyone!"
 date:   2016-09-01
 tags:
-  - Feature
+  - Features
 ---
 
 Connect with your GitHub account on [SonarQube.com](https://sonarqube.com), create a token, run a first SonarQube analysis on your open source project and enjoy!
