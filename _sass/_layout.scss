@@ -168,6 +168,7 @@ body {
 
 .post-meta-tags {
   margin-left: 20px;
+  font-weight: bold;
 
   & > svg {
     vertical-align: top;
@@ -183,6 +184,14 @@ body {
 .post-footer {
   margin-top: 10px;
   font-size: $small-font-size;
+
+  a {
+    font-style: italic;
+    
+    &::before {
+      content: ">> "
+    }
+  }
 }
 
 
