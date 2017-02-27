@@ -21,6 +21,12 @@ permalink: /get-started/
         At
         <strong><a href="https://sonarqube.com/account/security" target="_blank">"My Account > Security"</a></strong>.
       </p>
+      <p>
+        Also, go to the
+        <strong><a href="https://sonarqube.com/account/organizations" target="_blank">"Organizations"</a></strong>
+        tab and find the key of your personal organization.
+        It looks like: <code>&lt;your_github_username&gt;-github</code>.
+      </p>
     </li>
 
     <li id="step-generate-token" class="active">
@@ -70,11 +76,13 @@ permalink: /get-started/
       <h4>Execute the SonarQube Scanner for Maven from your computer</h4>
       <p>
         Running a SonarQube analysis with Maven is straighforward. You just need to run
-        the following command. Use the token you generated at step #2 for <code>sonar.login</code>:
+        the following command. For <code>sonar.organization</code> and <code>sonar.login</code>,
+        use the organization key and the generated token from step #2:
       </p>
       <pre>
 mvn sonar:sonar \
     -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
       <p>
@@ -100,6 +108,7 @@ sudo: false
 install: true
 addons:
   sonarqube:
+    organization: "your_organization_key"
     token:
       secure: "your_token_encrypted_with_travis_encrypt_tool"
 jdk:
@@ -148,11 +157,13 @@ plugins {
     id "org.sonarqube" version "2.2"
 }     </pre>
       <p>
-        and run the following command. Use the token you generated at step #2 for <code>sonar.login</code>:
+        and run the following command. For <code>sonar.organization</code> and <code>sonar.login</code>,
+        use the organization key and the generated token from step #2:
       </p>
       <pre>
 ./gradlew sonarqube \
        -Dsonar.host.url=https://sonarqube.com \
+       -Dsonar.organization=your_organization_key \
        -Dsonar.login=abcdef0123456789
       </pre>
       <p>
@@ -179,6 +190,7 @@ sudo: false
 install: true
 addons:
   sonarqube:
+    organization: "your_organization_key"
     token:
       secure: "your_token_encrypted_with_travis_encrypt_tool"
 jdk:
@@ -225,12 +237,15 @@ cache:
         Once you have
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">downloaded and installed</a>
         the SonarQube Scanner for MSBuild, running a SonarQube analysis is straighforward.
-        You just need to execute the following commands at the root of your .NET solution. Use the token you generated at step #2 for <code>sonar.login</code>:
+        You just need to execute the following commands at the root of your .NET solution.
+        For <code>sonar.organization</code> and <code>sonar.login</code>,
+        use the organization key and the generated token from step #2:
       </p>
       <pre>
 SonarQube.Scanner.MSBuild.exe begin \
                               /k:"your_project_key_that_must_be_unique" \
                               /d:"sonar.host.url=https://sonarqube.com" \
+                              /d:"sonar.organization=your_organization_key" \
                               /d:"sonar.login=abcdef0123456789"
 
 MsBuild.exe /t:Rebuild
@@ -281,7 +296,8 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
         Once you have downloaded and installed
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">the SonarQube Scanner for MSBuild</a>
         and <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip" target="_blank">the Build Wrapper</a>, you just need to execute
-        the following commands on your project. Use the token you generated at step #2 for <code>sonar.login</code>:
+        the following commands on your project. For <code>sonar.organization</code> and <code>sonar.login</code>,
+        use the organization key and the generated token from step #2:
         <br/>
       </p>
       <pre>
@@ -289,6 +305,7 @@ SonarQube.Scanner.MSBuild.exe begin \
                               /k:"your_project_key_that_must_be_unique" \
                               /d:"sonar.cfamily.build-wrapper-output=bw-output" \
                               /d:"sonar.host.url=https://sonarqube.com" \
+                              /d:"sonar.organization=your_organization_key" \
                               /d:"sonar.login=abcdef0123456789"
 
 build-wrapper-win-x86-64.exe --out-dir bw-output msbuild /t:rebuild
@@ -331,7 +348,9 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
         (for <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip">Windows</a>,
         <a href="https://sonarqube.com/static/cpp/build-wrapper-linux-x86.zip">Linux</a> or
         <a href="https://sonarqube.com/static/cpp/build-wrapper-macosx-x86.zip">Mac OS</a>),
-        you just need to execute the following commands on your projec. Use the token you generated at step #2 for <code>sonar.login</code>:
+        you just need to execute the following commands on your projec.
+        For <code>sonar.organization</code> and <code>sonar.login</code>,
+        use the organization key and the generated token from step #2:
         <br/>
       </p>
       <pre>
@@ -342,6 +361,7 @@ sonar-scanner \
     -Dsonar.sources=. \
     -Dsonar.cfamily.build-wrapper-output=bw-output \
     -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
       <p>
@@ -377,6 +397,7 @@ sudo: required
 
 addons:
   sonarqube:
+    organization: "your_organization_key"
     token:
       secure: "your_token_encrypted_with_travis_encrypt_tool"
 script:
@@ -418,13 +439,15 @@ cache:
       <p>
         Once you have <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">downloaded and installed</a>
         the SonarQube Scanner, running a SonarQube analysis is straighforward. You just need to execute the following command
-        at the root of your project. Use the token you generated at step #2 for <code>sonar.login</code>:
+        at the root of your project. For <code>sonar.organization</code> and <code>sonar.login</code>,
+        use the organization key and the generated token from step #2:
       </p>
       <pre>
 sonar-scanner \
     -Dsonar.projectKey=your_project_key_that_must_be_unique \
     -Dsonar.sources=. \
     -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
       <p>
@@ -454,6 +477,7 @@ sudo: required
 
 addons:
   sonarqube:
+    organization: "your_organization_key"
     token:
       secure: "your_token_encrypted_with_travis_encrypt_tool"
 jdk:
