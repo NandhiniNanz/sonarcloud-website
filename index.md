@@ -2,14 +2,14 @@
 layout: page
 permalink: /
 ---
+<div style="text-align: center; font-size: 40px; margin-bottom: 50px">
+Continuous Code Quality as a Service
+</div>
 
 **[SonarQube.com](https://sonarqube.com)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source code quality products **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
 
-SonarSource provides SonarQube.com for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions.
+SonarSource provides SonarQube.com for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions. Please read our [terms of service](Terms_of_service.pdf) to know more.
 
-### Get started!
-
-Follow our **["Get Started"](/get-started/)** guide to have your source code analyzed in a couple of minutes.
 
 ### Supported Languages
 
@@ -21,12 +21,11 @@ All the following languages are supported on SonarQube.com, powered by SonarSour
 | [HTML]        | [Python]        | [Groovy]         | [RPG]       |          |
 {:.languages}
 
-### Fair Use
 
-SonarSource expects users of this free service to use it in a reasonable manner, consume what they really need, and comply with a certain etiquette:
+### Now, get started!
 
-- analyses should not be run too frequently - no more than a dozen per day is generally quite sufficient
-- a single account should not be used to analyze hundreds or thousands of projects
+Follow our **["Get Started"](/get-started/)** guide to have your source code analyzed in a couple of minutes.
+
 
 ### About SonarQube
 
