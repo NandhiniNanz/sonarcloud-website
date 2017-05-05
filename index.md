@@ -16,9 +16,9 @@ SonarSource provides SonarQube.com for open source projects, free of charge. The
 All the following languages are supported on SonarQube.com, powered by SonarSource home-made analyzers (click on the link to access the documentation specific to a language):
 
 | [Java]        | [C / C++]       | [C#]             | [COBOL]     | [ABAP]   |
-| [JavaScript]  | [Objective C]   | [VB.NET]         | [PL/SQL]    | [Flex]   |
-| [PHP]         | [Swift]         | [Visual Basic]   | [PL/I]      | [XML]    |
-| [HTML]        | [Python]        | [Groovy]         | [RPG]       |          |
+| [JavaScript]  | [Objective C]   | [VB.NET]         | [PL/SQL]    | [XML]    |
+| [PHP]         | [Swift]         | [Visual Basic]   | [PL/I]      |          |
+| [HTML]        | [Python]        | [Flex]           | [RPG]       |          |
 {:.languages}
 
 
@@ -46,7 +46,6 @@ than 20 different languages.
 [C#]: http://redirect.sonarsource.com/plugins/csharp.html
 [VB.NET]: http://redirect.sonarsource.com/plugins/vbnet.html
 [Visual Basic]: http://redirect.sonarsource.com/plugins/vb.html
-[Groovy]: http://redirect.sonarsource.com/plugins/groovy.html
 [COBOL]: http://redirect.sonarsource.com/plugins/cobol.html
 [PL/SQL]: http://redirect.sonarsource.com/plugins/plsql.html
 [PL/I]: http://redirect.sonarsource.com/plugins/pli.html
