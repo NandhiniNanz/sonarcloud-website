@@ -1,24 +1,13 @@
 <footer class="site-footer">
-  <div class="wrapper">
-    <div class="site-footer-wrapper">
-      <ul class="media-list">
-        <li>
-          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-            <span class="icon icon--rss">{% include icon-rss.svg %}</span>
-            <span class="username">RSS</span>
-          </a>
-        </li>
-
-        {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-        {% endif %}
-      </ul>
-
-      <div class="site-description">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
+  <div>
+    © 2008-2017, SonarQube.com by <a href="http://www.sonarsource.com" title="SonarSource SA">SonarSource SA</a>. All rights reserved.
+  </div>
+  <div>
+    <a href="https://about.sonarqube.com/news/">News</a> -
+    <a href="https://about.sonarqube.com/Terms_of_service.pdf">Terms</a> -
+    <a href="https://twitter.com/sonarqube">Twitter</a> -
+    <a href="https://about.sonarqube.com/get-started/">Get Started</a> -
+    <a href="https://about.sonarqube.com/contact/">Help</a> -
+    <a href="https://sonarqube.com/about">About</a>
   </div>
 </footer>
