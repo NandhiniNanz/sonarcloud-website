@@ -3,15 +3,15 @@ layout: default
 permalink: /get-started/
 ---
 <section id="tutorial">
-  <h1>Want to get started quickly on SonarQube.com?</h1>
+  <h1>Want to get started quickly on SonarCloud?</h1>
   <p>Just follow these couple of steps!</p>
 
   <ul class="tutorial-list active">
     <li id="step-log-in" class="active">
-      <h4>Log in on SonarQube.com</h4>
+      <h4>Log in on SonarCloud</h4>
       <p>
         You just need to have a GitHub account and to click on
-        <strong><a href="https://sonarqube.com/sessions/new" target="_blank">"Log in with GitHub"</a></strong>.
+        <strong><a href="https://sonarcloud.io/sessions/new" target="_blank">"Log in with GitHub"</a></strong>.
       </p>
     </li>
 
@@ -19,11 +19,11 @@ permalink: /get-started/
       <h4>Generate an authentication token</h4>
       <p>
         At
-        <strong><a href="https://sonarqube.com/account/security" target="_blank">"My Account > Security"</a></strong>.
+        <strong><a href="https://sonarcloud.io/account/security" target="_blank">"My Account > Security"</a></strong>.
       </p>
       <p>
         Also, go to the
-        <strong><a href="https://sonarqube.com/account/organizations" target="_blank">"Organizations"</a></strong>
+        <strong><a href="https://sonarcloud.io/account/organizations" target="_blank">"Organizations"</a></strong>
         tab and find the key of your personal organization.
         It looks like: <code>&lt;your_github_username&gt;-github</code>.
       </p>
@@ -60,11 +60,11 @@ permalink: /get-started/
 
     <!-- Maven -->
     <li id="step-java-maven" class="option-java-maven question animate-in hidden">
-      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <h4>Is it a first analysis on SonarCloud?</h4>
       <p class="note">
         Run a first analysis from your computer to get started quickly,
         and then move to an automated process to benefit from the full power
-        of SonarQube.com.
+        of SonarCloud.
       </p>
       <ul class="tabs">
         <li><a id="option-java-maven-local" href="#step-java-maven-local">This is a first analysis</a></li>
@@ -81,7 +81,7 @@ permalink: /get-started/
       </p>
       <pre>
 mvn sonar:sonar \
-    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
@@ -122,7 +122,7 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_java-maven-travis" target="_blank">Java Maven-based project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_java-maven-travis" target="_blank">Java Maven-based project analyzed on SonarCloud using Travis</a>
       </p>
       <p>
         Please visit the
@@ -133,11 +133,11 @@ cache:
 
     <!-- Gradle -->
     <li id="step-java-gradle" class="option-java-gradle question animate-in hidden">
-      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <h4>Is it a first analysis on SonarCloud?</h4>
       <p class="note">
         Run a first analysis from your computer to get started quickly,
         and then move to an automated process to benefit from the full power
-        of SonarQube.com.
+        of SonarCloud.
       </p>
       <ul class="tabs">
         <li><a id="option-java-gradle-local" href="#step-java-gradle-local">This is a first analysis</a></li>
@@ -162,7 +162,7 @@ plugins {
       </p>
       <pre>
 ./gradlew sonarqube \
-       -Dsonar.host.url=https://sonarqube.com \
+       -Dsonar.host.url=https://sonarcloud.io \
        -Dsonar.organization=your_organization_key \
        -Dsonar.login=abcdef0123456789
       </pre>
@@ -206,7 +206,7 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_java-gradle-travis" target="_blank">Java Gradle-based project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_java-gradle-travis" target="_blank">Java Gradle-based project analyzed on SonarCloud using Travis</a>
       </p>
       <p>
         Please visit the
@@ -219,11 +219,11 @@ cache:
     <!-- .NET World -->
     <!-- ********** -->
     <li id="step-dotnet" class="option-dotnet question animate-in hidden">
-      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <h4>Is it a first analysis on SonarCloud?</h4>
       <p class="note">
         Run a first analysis from your computer to get started quickly,
         and then move to an automated process to benefit from the full power
-        of SonarQube.com.
+        of SonarCloud.
       </p>
       <ul class="tabs">
         <li><a id="option-dotnet-local" href="#step-dotnet-local">This is a first analysis</a></li>
@@ -244,7 +244,7 @@ cache:
       <pre>
 SonarQube.Scanner.MSBuild.exe begin \
                               /k:"your_project_key_that_must_be_unique" \
-                              /d:"sonar.host.url=https://sonarqube.com" \
+                              /d:"sonar.host.url=https://sonarcloud.io" \
                               /d:"sonar.organization=your_organization_key" \
                               /d:"sonar.login=abcdef0123456789"
 
@@ -267,7 +267,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       </p>
       <p>
         Once you have an account on VSTS for your project, you first need to
-        <a href="http://docs.sonarqube.org/display/SCAN/SonarQube+Endpoint">define a SonarQube end point</a> that points to SonarQube.com,
+        <a href="http://docs.sonarqube.org/display/SCAN/SonarQube+Endpoint">define a SonarQube end point</a> that points to SonarCloud,
         and then to
         <a href="http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+VSTS-TFS#AnalyzingwithSonarQubeExtensionforVSTS-TFS-AnalyzingwithSonarQubeScannerforMSBuild">enable the SonarQube analysis</a>
         in the build definition of your project.
@@ -295,7 +295,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       <p>
         Once you have downloaded and installed
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">the SonarQube Scanner for MSBuild</a>
-        and <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip" target="_blank">the Build Wrapper</a>, you just need to execute
+        and <a href="https://sonarcloud.io/static/cpp/build-wrapper-win-x86.zip" target="_blank">the Build Wrapper</a>, you just need to execute
         the following commands on your project. For <code>sonar.organization</code> and <code>sonar.login</code>,
         use the organization key and the generated token from step #2:
         <br/>
@@ -304,7 +304,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
 SonarQube.Scanner.MSBuild.exe begin \
                               /k:"your_project_key_that_must_be_unique" \
                               /d:"sonar.cfamily.build-wrapper-output=bw-output" \
-                              /d:"sonar.host.url=https://sonarqube.com" \
+                              /d:"sonar.host.url=https://sonarcloud.io" \
                               /d:"sonar.organization=your_organization_key" \
                               /d:"sonar.login=abcdef0123456789"
 
@@ -313,7 +313,7 @@ build-wrapper-win-x86-64.exe --out-dir bw-output msbuild /t:rebuild
 SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       </pre>
       <p>
-        Once you have published a first analysis on SonarQube.com, you can add those commands
+        Once you have published a first analysis on SonarCloud, you can add those commands
          to your build process to automate the analysis of your code.
       </p>
       <p>
@@ -327,11 +327,11 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
 
     <!-- CLang or GCC -->
     <li id="step-cfamily-clang-gcc" class="option-cfamily-clang-gcc question animate-in hidden">
-      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <h4>Is it a first analysis on SonarCloud?</h4>
       <p class="note">
         Run a first analysis from your computer to get started quickly,
         and then move to an automated process to benefit from the full power
-        of SonarQube.com.
+        of SonarCloud.
       </p>
       <ul class="tabs">
         <li><a id="option-cfamily-clang-gcc-local" href="#step-cfamily-clang-gcc-local">This is a first analysis</a></li>
@@ -345,9 +345,9 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
         Once you have downloaded and installed the
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">SonarQube Scanner</a>
         and the Build Wrapper
-        (for <a href="https://sonarqube.com/static/cpp/build-wrapper-win-x86.zip">Windows</a>,
-        <a href="https://sonarqube.com/static/cpp/build-wrapper-linux-x86.zip">Linux</a> or
-        <a href="https://sonarqube.com/static/cpp/build-wrapper-macosx-x86.zip">Mac OS</a>),
+        (for <a href="https://sonarcloud.io/static/cpp/build-wrapper-win-x86.zip">Windows</a>,
+        <a href="https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip">Linux</a> or
+        <a href="https://sonarcloud.io/static/cpp/build-wrapper-macosx-x86.zip">Mac OS</a>),
         you just need to execute the following commands on your projec.
         For <code>sonar.organization</code> and <code>sonar.login</code>,
         use the organization key and the generated token from step #2:
@@ -360,12 +360,12 @@ sonar-scanner \
     -Dsonar.projectKey=your_project_key_that_must_be_unique \
     -Dsonar.sources=. \
     -Dsonar.cfamily.build-wrapper-output=bw-output \
-    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
       <p>
-        Once you have published a first analysis on SonarQube.com, you can execute those command lines
+        Once you have published a first analysis on SonarCloud, you can execute those command lines
         as as part of your build process to automate the analysis of your code.
       </p>
       <p>
@@ -409,7 +409,7 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_c-sqscanner-travis" target="_blank">C project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_c-sqscanner-travis" target="_blank">C project analyzed on SonarCloud using Travis</a>
       </p>
       <p>
         Please visit the
@@ -422,11 +422,11 @@ cache:
     <!-- Other Worldly -->
     <!-- ********** -->
     <li id="step-others" class="option-others question animate-in hidden">
-      <h4>Is it a first analysis on SonarQube.com?</h4>
+      <h4>Is it a first analysis on SonarCloud?</h4>
       <p class="note">
         Run a first analysis from your computer to get started quickly,
         and then move to an automated process to benefit from the full power
-        of SonarQube.com.
+        of SonarCloud.
       </p>
       <ul class="tabs">
         <li><a id="option-others-local" href="#step-others-local">This is a first analysis</a></li>
@@ -446,7 +446,7 @@ cache:
 sonar-scanner \
     -Dsonar.projectKey=your_project_key_that_must_be_unique \
     -Dsonar.sources=. \
-    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
@@ -490,7 +490,7 @@ cache:
       </pre>
       <p>
         Live example:
-        <a href="https://github.com/SonarSource/sq-com_example_standard-sqscanner-travis" target="_blank">Standard project analyzed on SonarQube.com using Travis</a>
+        <a href="https://github.com/SonarSource/sq-com_example_standard-sqscanner-travis" target="_blank">Standard project analyzed on SonarCloud using Travis</a>
       </p>
       <p>
         Please visit the

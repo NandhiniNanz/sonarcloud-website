@@ -16,5 +16,5 @@ news:
 
 Please also note that the support for the Groovy language has been dropped. SonarSource
 does not develop this analyzer (this is a community one), so we would not be able to provide
-a reliable service with it in the future. We hope that you will keep on enjoying SonarQube.com
+a reliable service with it in the future. We hope that you will keep on enjoying SonarCloud
 for all the various other languages that it supports.

@@ -5,7 +5,7 @@ date:   2016-05-02
 tags:
   - Features
 ---
-If you're already relying on online ALM services to run your builds, manage your source code, track your project activity, ... You're just one-click away from continuously analyzing the quality of your source code with help of SonarQube.com!
+If you're already relying on online ALM services to run your builds, manage your source code, track your project activity, ... You're just one-click away from continuously analyzing the quality of your source code with help of SonarCloud!
 
 This online service relies on [SonarQube][sq-site], the widely-adopted open source platform allowing to detect bugs, vulnerabilities and code smells in many different languages.
 
@@ -19,7 +19,7 @@ The service is available for Open Source projects only, free of charge and with 
 
 {% highlight sh %}
 mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar \
-    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.host.url=https://sonarcloud.io \
     -Dsonar.login=$SONAR_TOKEN
 {% endhighlight %}
 

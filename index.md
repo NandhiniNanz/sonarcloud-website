@@ -6,14 +6,14 @@ permalink: /
 Continuous Code Quality as a Service
 </div>
 
-**[SonarQube.com](https://sonarqube.com)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source code quality products **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
+**[SonarCloud](https://sonarcloud.io)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source code quality products **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
 
-SonarSource provides SonarQube.com for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions. Please read our [terms of service](Terms_of_service.pdf) to know more.
+SonarSource provides SonarCloud for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions. Please read our [terms of service](Terms_of_service.pdf) to know more.
 
 
 ### Supported Languages
 
-All the following languages are supported on SonarQube.com, powered by SonarSource home-made analyzers (click on the link to access the documentation specific to a language):
+All the following languages are supported on SonarCloud, powered by SonarSource home-made analyzers (click on the link to access the documentation specific to a language):
 
 | [Java]        | [C / C++]       | [C#]             | [COBOL]     | [ABAP]   |
 | [JavaScript]  | [Objective C]   | [VB.NET]         | [PL/SQL]    | [XML]    |

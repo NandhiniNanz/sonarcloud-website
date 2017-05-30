@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: About SonarQube.com
+title: About SonarCloud
 description: >
-  SonarQube.com is a service operated by SonarSource, the company that develops
+  SonarCloud is a service operated by SonarSource, the company that develops
   and promotes open-source code quality products SonarQube and SonarLint.
 baseurl: ""
-url: "https://about.sonarqube.com"
-logo_url: "/images/sonarqube.com_162px.png"
+url: "https://about.sonarcloud.io"
+logo_url: "/images/SonarCloud-White.png"
 twitter_username: sonarqube
 
 # Build settings
