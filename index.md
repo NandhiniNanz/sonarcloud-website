@@ -8,7 +8,7 @@ Continuous Code Quality as a Service
 
 **[SonarCloud](https://sonarcloud.io)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source code quality products **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
 
-SonarSource provides SonarCloud for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions. Please read our [terms of service](Terms_of_service.pdf) to know more.
+SonarSource provides SonarCloud for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions. Please read our [terms of service](terms.pdf) to know more.
 
 
 ### Supported Languages
