@@ -12,7 +12,7 @@ description: >
   and promotes open-source code quality products SonarQube and SonarLint.
 baseurl: ""
 url: "https://about.sonarcloud.io"
-logo_url: "/images/SonarCloud-White-128.png"
+logo_url: "/images/SonarCloud-White-162px.png"
 twitter_username: sonarqube
 
 # Build settings
