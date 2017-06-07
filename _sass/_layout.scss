@@ -33,8 +33,7 @@ body {
  */
 .site-header {
   position: relative;
-  padding-top: 7px;
-  padding-bottom: 8px;
+  //padding: 0px;
   background-color: $header-background;
 }
 
@@ -57,13 +56,13 @@ body {
   display: inline-block;
   vertical-align: middle;
   height: 30px;
-  line-height: 38px;
+  line-height: 27px;
 
   .page-link {
     margin-left: 20px;
     color: $header-text-color;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.05em;
 
     &:hover, &:active, &.active {
       color: #e6e6e6;
