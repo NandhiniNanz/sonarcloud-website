@@ -48,7 +48,8 @@ available on 20 programming languages.
     <a class="btn" href="browse.me">Browse</a>
 </div>
 <div class="about-news">
-<span class="about-news-news">News</span>
+<span class="about-news-news">News<img src="images/chevron-right.png" alt="news"/></span>
+    
 <a href="subscribe.by.email">Subscribe by email</a>
 <a href="subscribe.by.feed">Subscribe by feed</a>
 <a href="see.all">See all</a>

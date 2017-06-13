@@ -406,8 +406,9 @@ body {
     background-color: white;
     border-radius: 5px;
     border: 1px $orange500 solid;
-    line-height:36px;
-    height:38px;
+    line-height: 36px;
+    height: 38px;
+    margin-bottom: 38px;
 
     &:hover {
       color: $black100;
@@ -418,15 +419,31 @@ body {
 }
 
 .about-news {
+
+  border-top: 1px solid $black300;
+  padding-top: 32px;
   text-align: center;
-  display: inline;
   font-size: 14px;
+
+  .about-news-news {
+    font-size: 18px;
+
+    img {
+      padding-left: 24px;
+      padding-right: 18px;
+
+      height: 24px;
+      width: auto;
+
+    }
+  }
+
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
+    padding: 0px 10px;
 
     &:hover {
-      text-decoration: underline;
       color: $black500;
     }
   }
