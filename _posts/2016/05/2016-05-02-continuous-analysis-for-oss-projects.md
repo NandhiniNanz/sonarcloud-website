@@ -19,7 +19,7 @@ The service is available for Open Source projects only, free of charge and with 
 
 {% highlight sh %}
 mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar \
-    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.host.url={{ site.service_url }} \
     -Dsonar.login=$SONAR_TOKEN
 {% endhighlight %}
 

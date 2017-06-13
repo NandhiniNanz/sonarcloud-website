@@ -7,15 +7,15 @@ permalink: /get-started/
 
   <ul class="tutorial-list active">
     <li id="step-log-in" class="active">
-      <h4>Connect with your GitHub account - <a href="https://sonarcloud.io/sessions/new" target="_get_started">"Log in"</a></h4>
+      <h4>Connect with your GitHub account - <a href="{{ site.service_url }}/sessions/new" target="_get_started">"Log in"</a></h4>
     </li>
 
     <li id="step-generate-token" class="active">
-      <h4>Generate an authentication token - <a href="https://sonarcloud.io/account/security" target="_get_started">"My Account > Security"</a></h4>
+      <h4>Generate an authentication token - <a href="{{ site.service_url }}/account/security" target="_get_started">"My Account > Security"</a></h4>
     </li>
 
     <li id="step-choose-org" class="active">
-      <h4>Prepare your organization - <a href="https://sonarcloud.io/account/organizations" target="_get_started">"My Account > Organizations"</a></h4>
+      <h4>Prepare your organization - <a href="{{ site.service_url }}/account/organizations" target="_get_started">"My Account > Organizations"</a></h4>
       <p>
         The easiest way is to simply find the key of your personal organization.
         It looks like: <code>&lt;your_github_username&gt;-github</code>.
@@ -79,7 +79,7 @@ permalink: /get-started/
       </p>
       <pre>
 mvn sonar:sonar \
-    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.host.url={{ site.service_url }} \
     -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
@@ -160,7 +160,7 @@ plugins {
       </p>
       <pre>
 ./gradlew sonarqube \
-       -Dsonar.host.url=https://sonarcloud.io \
+       -Dsonar.host.url={{ site.service_url }} \
        -Dsonar.organization=your_organization_key \
        -Dsonar.login=abcdef0123456789
       </pre>
@@ -242,7 +242,7 @@ cache:
       <pre>
 SonarQube.Scanner.MSBuild.exe begin \
                               /k:"your_project_key_that_must_be_unique" \
-                              /d:"sonar.host.url=https://sonarcloud.io" \
+                              /d:"sonar.host.url={{ site.service_url }}" \
                               /d:"sonar.organization=your_organization_key" \
                               /d:"sonar.login=abcdef0123456789"
 
@@ -293,7 +293,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
       <p>
         Once you have downloaded and installed
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html" target="_blank">the SonarQube Scanner for MSBuild</a>
-        and <a href="https://sonarcloud.io/static/cpp/build-wrapper-win-x86.zip" target="_blank">the Build Wrapper</a>, you just need to execute
+        and <a href="{{ site.service_url }}/static/cpp/build-wrapper-win-x86.zip" target="_blank">the Build Wrapper</a>, you just need to execute
         the following commands on your project. For <code>sonar.organization</code> and <code>sonar.login</code>,
         use the organization key and the generated token from step #2:
         <br/>
@@ -302,7 +302,7 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
 SonarQube.Scanner.MSBuild.exe begin \
                               /k:"your_project_key_that_must_be_unique" \
                               /d:"sonar.cfamily.build-wrapper-output=bw-output" \
-                              /d:"sonar.host.url=https://sonarcloud.io" \
+                              /d:"sonar.host.url={{ site.service_url }}" \
                               /d:"sonar.organization=your_organization_key" \
                               /d:"sonar.login=abcdef0123456789"
 
@@ -343,9 +343,9 @@ SonarQube.Scanner.MSBuild.exe end /d:"sonar.login=abcdef0123456789"
         Once you have downloaded and installed the
         <a href="http://redirect.sonarsource.com/doc/install-configure-scanner.html" target="_blank">SonarQube Scanner</a>
         and the Build Wrapper
-        (for <a href="https://sonarcloud.io/static/cpp/build-wrapper-win-x86.zip">Windows</a>,
-        <a href="https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip">Linux</a> or
-        <a href="https://sonarcloud.io/static/cpp/build-wrapper-macosx-x86.zip">Mac OS</a>),
+        (for <a href="{{ site.service_url }}/static/cpp/build-wrapper-win-x86.zip">Windows</a>,
+        <a href="{{ site.service_url }}/static/cpp/build-wrapper-linux-x86.zip">Linux</a> or
+        <a href="{{ site.service_url }}/static/cpp/build-wrapper-macosx-x86.zip">Mac OS</a>),
         you just need to execute the following commands on your projec.
         For <code>sonar.organization</code> and <code>sonar.login</code>,
         use the organization key and the generated token from step #2:
@@ -358,7 +358,7 @@ sonar-scanner \
     -Dsonar.projectKey=your_project_key_that_must_be_unique \
     -Dsonar.sources=. \
     -Dsonar.cfamily.build-wrapper-output=bw-output \
-    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.host.url={{ site.service_url }} \
     -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>
@@ -444,7 +444,7 @@ cache:
 sonar-scanner \
     -Dsonar.projectKey=your_project_key_that_must_be_unique \
     -Dsonar.sources=. \
-    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.host.url={{ site.service_url }} \
     -Dsonar.organization=your_organization_key \
     -Dsonar.login=abcdef0123456789
       </pre>

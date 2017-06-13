@@ -6,7 +6,7 @@ permalink: /
 # Continuous Code Quality Online
 
 {:.about-subtitle}
-Improve mechanically the quality of your project with [SonarCloud]({{ site.service_url }}),<br/>
+Improve mechanically the quality of your project with SonarCloud,<br/>
 available on 20 programming languages.
 
 <div class="about about-price-tiers">
@@ -133,8 +133,8 @@ $(function() {
 
 <div class="about-news about">
 <span class="about-news-news">News<img src="images/chevron-right-300.svg" alt="news"/></span>
-    
-<a href="subscribe.by.email">Subscribe by email</a>
-<a href="subscribe.by.feed">Subscribe by feed</a>
-<a href="see.all">See all</a>
+
+<a href="http://feedburner.google.com/fb/a/mailverify?uri=NewsSonarCloud&amp;loc=en_US">Subscribe by email</a>
+<a href="http://feeds.feedburner.com/NewsSonarCloud">Subscribe by feed</a>
+<a href="/news">See all</a>
 </div>

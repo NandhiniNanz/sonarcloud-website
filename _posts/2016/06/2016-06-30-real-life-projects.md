@@ -15,7 +15,7 @@ oVirt is a virtualization platform that manages virtual machines, storage and vi
 - Java
 - Built with [SonarQube Scanner for Maven](http://redirect.sonarsource.com/doc/install-configure-scanner-maven.html) on Jenkins
 - [Sources](https://github.com/oVirt/ovirt-engine)
-- [See dashboard](https://sonarcloud.io/overview?id=org.ovirt.engine%3Aroot)
+- [See dashboard]({{ site.service_url }}/overview?id=org.ovirt.engine%3Aroot)
 
 ## SimGrid
 
@@ -24,7 +24,7 @@ SimGrid is a scientific instrument to study the behavior of large-scale distribu
 - C/C++
 - Built with [SonarQube Scanner](http://redirect.sonarsource.com/doc/install-configure-scanner.html) and Build Wrapper on TravisCI
 - [Sources](https://github.com/simgrid/simgrid)
-- [See dashboard](https://sonarcloud.io/overview?id=simgrid)
+- [See dashboard]({{ site.service_url }}/overview?id=simgrid)
 
 ## JHipster
 
@@ -33,7 +33,7 @@ JHipster is a Yeoman generator, used to create a Spring Boot + AngularJS project
 - Java & JavaScript
 - Built with [SonarQube Scanner for Maven](http://redirect.sonarsource.com/doc/install-configure-scanner-maven.html) on TravisCI
 - [Sources](https://github.com/jhipster/jhipster-sample-app)
-- [See dashboard](https://sonarcloud.io/overview?id=io.github.jhipster.sample%3Ajhipster-sample-application)
+- [See dashboard]({{ site.service_url }}/overview?id=io.github.jhipster.sample%3Ajhipster-sample-application)
 
 ## OpenCover
 
@@ -42,4 +42,4 @@ OpenCover is a code coverage tool for .NET 2 and above (Windows OSs only - no MO
 - C#
 - Built with [SonarQube Scanner for MSBuild](http://redirect.sonarsource.com/doc/install-configure-scanner-msbuild.html) on AppVeyor
 - [Sources](https://github.com/OpenCover/opencover)
-- [See dashboard](https://sonarcloud.io/overview?id=opencover)
+- [See dashboard]({{ site.service_url }}/overview?id=opencover)

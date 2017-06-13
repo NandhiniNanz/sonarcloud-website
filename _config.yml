@@ -11,7 +11,8 @@ description: >
   SonarCloud is a service operated by SonarSource, the company that develops
   and promotes open-source code quality products SonarQube and SonarLint.
 baseurl: ""
-url: "https://about.sonarcloud.io"
+# url should point to "https://about.sonarcloud.io" for PROD, the value below is for DEV
+url: "https://about2.sonarcloud.io"
 # service_url should point to "https://sonarcloud.io" for PROD, the value below is for DEV
 service_url: "https://lagoon2.sonarsource.com"
 logo_url: "/images/SonarCloud-white.svg"
