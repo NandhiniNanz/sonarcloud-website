@@ -40,14 +40,16 @@ available on 20 programming languages.
 
 
 <div class="about-explore">
-   <h3>Explore open source projects on Sonarcloud<h3>
+   <h3>Explore open source projects on Sonarcloud</h3>
+   <p>
     SonarCloud offers free acces sto analyze open sources projects. <br />
     This is public and open to everyone who wants to browse the service.
+    </p>
     <a class="btn" href="browse.me">Browse</a>
 </div>
 <div class="about-news">
 <span class="about-news-news">News</span>
 <a href="subscribe.by.email">Subscribe by email</a>
 <a href="subscribe.by.feed">Subscribe by feed</a>
-<a href="see.all">Subscribe by email</a>See all</a>
+<a href="see.all">See all</a>
 </div>

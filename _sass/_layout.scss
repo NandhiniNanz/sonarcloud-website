@@ -5,8 +5,6 @@ body {
   min-height: 100vh;
 }
 
-
-
 /**
  * Wrapper
  */
@@ -20,13 +18,11 @@ body {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-    @include media-query($on-palm) {
-      padding-right: $spacing-unit / 2;
-      padding-left: $spacing-unit / 2;
-    }
+  @include media-query($on-palm) {
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
 }
-
-
 
 /**
  * Site Header
@@ -37,8 +33,6 @@ body {
   background-color: $header-background;
 }
 
-
-
 /**
  * Site Logo
  */
@@ -46,8 +40,6 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
-
-
 
 /**
  * Site Navigation
@@ -69,8 +61,6 @@ body {
     }
   }
 }
-
-
 
 /**
  * Site Footer
@@ -109,8 +99,6 @@ body {
     }
   }
 }
-
-
 
 /**
  * Page content
@@ -229,8 +217,6 @@ body {
     }
   }
 }
-
-
 
 /**
  * Posts
@@ -409,19 +395,21 @@ body {
 
 .about-explore {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 
   h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
- .btn {
-   color: $orange500;
-   background-color: white;
-   border-radius: 10px;
-   border: 1px $orange500 solid;
+  .btn {
+    color: $orange500;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px $orange500 solid;
+    line-height:36px;
+    height:38px;
 
-   &:hover {
+    &:hover {
       color: $black100;
       background-color: $orange500;
     }
@@ -430,10 +418,19 @@ body {
 }
 
 .about-news {
+  text-align: center;
   display: inline;
   font-size: 14px;
-}
+  a {
+    text-decoration: none;
+    color: inherit;
 
+    &:hover {
+      text-decoration: underline;
+      color: $black500;
+    }
+  }
+}
 
 $control-height: 44px;
 
