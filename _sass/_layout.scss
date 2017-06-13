@@ -419,3 +419,103 @@ $control-height: 44px;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
   }
 }
+
+#prices {
+  display: none;
+  width: 800px;
+
+  background-color: $black100;
+  border: 1px solid $black500;
+
+  .remark {
+    color: $black500;
+    font-weight: 400;
+  }
+
+  header, footer, section {
+    padding: 10px;
+  }
+
+  header, footer {
+    background-color: $black200;
+  }
+
+  header {
+    border-bottom: 1px solid $black300;
+  }
+
+  footer {
+    border-top: 1px solid $black300;
+    text-align: right;
+
+    a {
+      color: $black700;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover, &:active {
+        color: $black500;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  table {
+    margin: 0 0 20px 0;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+
+    th, td {
+      padding: 10px;
+    }
+
+    thead {
+      td, th {
+        border-bottom: 1px solid $black300;
+      }
+
+      tr {
+        th {
+          text-align: left;
+          em {
+            font-weight: bold;
+            font-style: normal;
+          }
+        }
+      }
+
+      &::after {
+        display: block;
+        content: "\200c";
+        line-height: 10px;
+      }
+    }
+
+    tbody {
+      tr:nth-child(odd) {
+        background-color: $black200;
+      }
+    }
+  }
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.no-close {
+  z-index: 10000;
+}
+
+.ui-widget-overlay {
+  position: fixed;
+  z-index: 6000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($black900, 0.7);
+}
