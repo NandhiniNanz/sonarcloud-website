@@ -76,15 +76,24 @@ body {
  * Site Footer
  */
 .site-footer {
-  padding: $spacing-unit/2 0;
-  min-height: 60px;
   box-sizing: border-box;
-  border-top: 1px solid #e6e6e6;
-  background-color: #f3f3f3;
   font-size: 12px;
-  line-height: 1.5;
   color: #595959;
   text-align: center;
+
+  .grey-band {
+    padding: $spacing-unit/2 0;
+    line-height: 1.5;
+    min-height: 60px;
+    border-top: 1px solid #e6e6e6;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .white-band {
+    padding-top: 20px;
+    min-height: 60px;
+  }
 
   a {
     border-bottom: 1px solid #d0d0d0;
