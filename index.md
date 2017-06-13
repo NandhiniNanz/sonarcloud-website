@@ -120,3 +120,12 @@ $(function() {
     });
 });
 </script>
+
+<span class="explore">Explore open source projects on SonarCloud</span>
+<span class="explore-sub">
+    SonarCloud offers free acces to analyze open source projects.<br/>
+    This is public and open to everyone who wants to browse the service.
+</span>
+<span class="explore-sub">
+    <a href="#" class="btn btn-explore">Browse</a>
+</span>
