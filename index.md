@@ -17,9 +17,9 @@ available on 20 programming languages.
         <span>&nbsp;</span>
     </div>
     <div class="about-price-tier">
-        <span>From <em>5 &euro;</em>/mo</span>
+        <span>From <em>5&euro;</em>/mo</span>
         <h3>for private projects</h3>
-        <a href="#" id="see-prices">see prices →</a>
+        <a href="#" id="see-prices">see prices</a>
     </div>
 </div>
 
@@ -96,11 +96,11 @@ available on 20 programming languages.
 <div class="about about-start">
     <div class="about-start-using">
         <span>Start using SonarCloud</span>
-        <a href="/contact">Need help? →</a>
+        <a href="/contact">Need help?</a>
     </div>
     <div class="about-start-signup">
         <a class="btn" href="#">Configure &amp; Sign up</a>
-        <a href="#">Just sign up →</a>
+        <a href="#">Just sign up</a>
     </div>
 </div>
 
