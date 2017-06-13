@@ -123,7 +123,7 @@ $(function() {
 <div class="about about-explore">
     <span class="explore">Explore open source projects on SonarCloud</span>
     <span class="explore-sub">
-        SonarCloud offers free acces to analyze open source projects.<br/>
+        SonarCloud offers free access to analyze open source projects.<br/>
         This is public and open to everyone who wants to browse the service.
     </span>
     <span class="explore-sub">
