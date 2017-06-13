@@ -7,7 +7,7 @@ permalink: /
 # Continuous Code Quality Online
 
 {:.about-subtitle}
-Improve mechanically the quality of your project with [SonarCloud](https://sonarcloud.io),<br/>
+Improve mechanically the quality of your project with [SonarCloud]({{ site.service_url }}),<br/>
 available on 20 programming languages.
 
 <div class="about about-price-tiers">
@@ -99,8 +99,8 @@ available on 20 programming languages.
         <a href="/contact">Need help?</a>
     </div>
     <div class="about-start-signup">
-        <a class="btn" href="#">Configure &amp; Sign up</a>
-        <a href="#">Just sign up</a>
+        <a class="btn" href="/get-started">Configure &amp; Sign up</a>
+        <a href="{{ site.service_url }}/sessions/new">Just sign up</a>
     </div>
 </div>
 
@@ -128,6 +128,6 @@ $(function() {
         This is public and open to everyone who wants to browse the service.
     </span>
     <span class="explore-sub">
-        <a href="#" class="btn btn-explore">Browse</a>
+        <a href="{{ site.service_url }}/projects" class="btn btn-explore">Browse</a>
     </span>
 </div>

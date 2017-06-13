@@ -12,6 +12,8 @@ description: >
   and promotes open-source code quality products SonarQube and SonarLint.
 baseurl: ""
 url: "https://about.sonarcloud.io"
+# service_url should point to "https://sonarcloud.io" for PROD, the value below is for DEV
+service_url: "https://lagoon2.sonarsource.com"
 logo_url: "/images/SonarCloud-white.svg"
 twitter_username: sonarqube
 
