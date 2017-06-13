@@ -120,7 +120,7 @@ $(function() {
 });
 </script>
 
-<div class="about">
+<div class="about about-explore">
     <span class="explore">Explore open source projects on SonarCloud</span>
     <span class="explore-sub">
         SonarCloud offers free acces to analyze open source projects.<br/>
@@ -131,7 +131,7 @@ $(function() {
     </span>
 </div>
 
-<div class="about about-news">
+<div class="about-news about">
 <span class="about-news-news">News<img src="images/chevron-right-300.svg" alt="news"/></span>
     
 <a href="subscribe.by.email">Subscribe by email</a>
