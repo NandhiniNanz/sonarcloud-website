@@ -39,6 +39,7 @@ body {
 .site-logo {
   display: inline-block;
   vertical-align: middle;
+  margin: 10px 0;
 }
 
 /**
@@ -393,31 +394,6 @@ body {
   }
 }
 
-.about-explore {
-  text-align: center;
-  font-size: 14px;
-
-  h3 {
-    font-size: 18px;
-  }
-
-  .btn {
-    color: $orange500;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px $orange500 solid;
-    line-height: 36px;
-    height: 38px;
-    margin-bottom: 38px;
-
-    &:hover {
-      color: $black100;
-      background-color: $orange500;
-    }
-
-  }
-}
-
 .about-news {
 
   border-top: 1px solid $black300;
@@ -434,7 +410,6 @@ body {
 
       height: 24px;
       width: auto;
-
     }
   }
 
