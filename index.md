@@ -10,7 +10,7 @@ permalink: /
 Improve mechanically the quality of your project with [SonarCloud](https://sonarcloud.io),<br/>
 available on 20 programming languages.
 
-<div class="about-price-tiers">
+<div class="about about-price-tiers">
     <div class="about-price-tier">
         <em>Free</em>
         <h3>for open source</h3>
@@ -93,7 +93,7 @@ available on 20 programming languages.
     </footer>
 </div>
 
-<div class="about-start">
+<div class="about about-start">
     <div class="about-start-using">
         <span>Start using SonarCloud</span>
         <a href="/contact">Need help? →</a>
@@ -121,11 +121,13 @@ $(function() {
 });
 </script>
 
-<span class="explore">Explore open source projects on SonarCloud</span>
-<span class="explore-sub">
-    SonarCloud offers free acces to analyze open source projects.<br/>
-    This is public and open to everyone who wants to browse the service.
-</span>
-<span class="explore-sub">
-    <a href="#" class="btn btn-explore">Browse</a>
-</span>
+<div class="about">
+    <span class="explore">Explore open source projects on SonarCloud</span>
+    <span class="explore-sub">
+        SonarCloud offers free acces to analyze open source projects.<br/>
+        This is public and open to everyone who wants to browse the service.
+    </span>
+    <span class="explore-sub">
+        <a href="#" class="btn btn-explore">Browse</a>
+    </span>
+</div>
