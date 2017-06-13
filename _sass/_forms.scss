@@ -42,28 +42,28 @@ textarea {
 
 button {
   padding: 6px 12px;
-  border: 1px solid #236a97;
-  border-radius: 2px;
   background: none;
-  color: #236a97;
+  color: $orange500;
+  border: 1px solid $orange500;
+  border-radius: 5px;
   font-size: 12px;
   font-weight: 400;
   cursor: pointer;
 
   &:hover {
-    background-color: #236a97;
-    color: #fff;
+    color: $black100;
+    background-color: $orange500;
   }
 
   &:focus {
-    border-color: #4b9fd5;
-    color: #4b9fd5;
+    color: $black100;
+    background-color: $orange500;
     outline: none;
   }
 
   &:active {
-    background-color: #236a97;
-    color: #fff;
+    color: $black100;
+    background-color: $orange500;
   }
 }
 
