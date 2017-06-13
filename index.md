@@ -2,54 +2,34 @@
 layout: page
 permalink: /
 ---
-<div style="text-align: center; font-size: 40px; margin-bottom: 50px">
-Continuous Code Quality as a Service
+
+{:.about-title}
+# Continuous Code Quality Online
+
+{:.about-subtitle}
+Improve mechanically the quality of your project with [SonarCloud](https://sonarcloud.io),<br/>
+available on 20 programming languages.
+
+<div class="about-price-tiers">
+    <div class="about-price-tier">
+        <em>Free</em>
+        <h3>for open source</h3>
+        <span>&nbsp;</span>
+    </div>
+    <div class="about-price-tier">
+        <span>From <em>5 &euro;</em>/mo</span>
+        <h3>for private projects</h3>
+        <a href="#prices">see prices →</a>
+    </div>
 </div>
 
-**[SonarCloud](https://sonarcloud.io)** is a service operated by **[SonarSource](http://www.sonarsource.com)**, the company that develops and promotes open-source code quality products **[SonarQube](http://www.sonarqube.org)** and **[SonarLint](http://www.sonarlint.org)**.
-
-SonarSource provides SonarCloud for open source projects, free of charge. The service is provided on a best-effort basis, and there may be occasional disruptions. Please read our [terms of service](terms.pdf) to know more.
-
-
-### Supported Languages
-
-All the following languages are supported on SonarCloud, powered by SonarSource home-made analyzers (click on the link to access the documentation specific to a language):
-
-| [Java]        | [C / C++]       | [C#]             | [COBOL]     | [ABAP]   |
-| [JavaScript]  | [Objective C]   | [VB.NET]         | [PL/SQL]    | [XML]    |
-| [PHP]         | [Swift]         | [Visual Basic]   | [PL/I]      |          |
-| [HTML]        | [Python]        | [Flex]           | [RPG]       |          |
-{:.languages}
-
-
-### Now, get started!
-
-Follow our **["Get Started"](/get-started/)** guide to have your source code analyzed in a couple of minutes.
-
-
-### About SonarQube
-
-![SonarQube](/images/sonarqube_black_128px.png)
-
-[SonarQube](http://www.sonarqube.org) is a widely adopted open source platform to inspect continuously the
-quality of source code and detect bugs, vulnerabilities and code smells in more
-than 20 different languages.
-
-[Java]: http://redirect.sonarsource.com/plugins/java.html
-[JavaScript]: http://redirect.sonarsource.com/plugins/javascript.html
-[PHP]: http://redirect.sonarsource.com/plugins/php.html
-[HTML]: http://redirect.sonarsource.com/plugins/web.html
-[C / C++]: http://redirect.sonarsource.com/plugins/cpp.html
-[Objective C]: http://redirect.sonarsource.com/plugins/objectivec.html
-[Swift]: http://redirect.sonarsource.com/plugins/swift.html
-[Python]: http://redirect.sonarsource.com/plugins/python.html
-[C#]: http://redirect.sonarsource.com/plugins/csharp.html
-[VB.NET]: http://redirect.sonarsource.com/plugins/vbnet.html
-[Visual Basic]: http://redirect.sonarsource.com/plugins/vb.html
-[COBOL]: http://redirect.sonarsource.com/plugins/cobol.html
-[PL/SQL]: http://redirect.sonarsource.com/plugins/plsql.html
-[PL/I]: http://redirect.sonarsource.com/plugins/pli.html
-[RPG]: http://redirect.sonarsource.com/plugins/rpg.html
-[ABAP]: http://redirect.sonarsource.com/plugins/abap.html
-[Flex]: http://redirect.sonarsource.com/plugins/flex.html
-[XML]: http://redirect.sonarsource.com/plugins/xml.html
+<div class="about-start">
+    <div class="about-start-using">
+        <span>Start using SonarCloud</span>
+        <a href="/contact">Need help? →</a>
+    </div>
+    <div class="about-start-signup">
+        <a class="btn" href="#">Configure &amp; Sign up</a>
+        <a href="#">Just sign up →</a>
+    </div>
+</div>

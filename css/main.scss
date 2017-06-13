@@ -52,6 +52,7 @@ $on-laptop:        960px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "palette",
         "base",
         "layout",
         "forms",
