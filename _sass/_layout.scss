@@ -48,6 +48,24 @@ body {
   margin: 10px 0;
 }
 
+.sign-in {
+  display: block;
+  float: right;
+  height: 100%;
+  margin: 24px auto;
+  color: $black300;
+  border-bottom: 1px solid $black500;
+  font-size: 14px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover, &:active {
+    color: $black100;
+    border-color: $black300;
+  }
+}
 
 
 /**
