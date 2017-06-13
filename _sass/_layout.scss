@@ -407,6 +407,34 @@ body {
   }
 }
 
+.about-explore {
+  text-align: center;
+  font-size: 12px;
+
+  h3 {
+    font-size: 14px;
+  }
+
+ .btn {
+   color: $orange500;
+   background-color: white;
+   border-radius: 10px;
+   border: 1px $orange500 solid;
+
+   &:hover {
+      color: $black100;
+      background-color: $orange500;
+    }
+
+  }
+}
+
+.about-news {
+  display: inline;
+  font-size: 14px;
+}
+
+
 $control-height: 44px;
 
 .btn {

@@ -7,9 +7,6 @@ Continuous Code Quality
 </div>
 
 
-
-=======
-
 {:.about-title}
 # Continuous Code Quality Online
 
@@ -42,15 +39,15 @@ available on 20 programming languages.
 </div>
 
 
-### Explore open source projects on Sonarcloud
-SonarCloud offers free acces sto analyze open sources projects. <br />
-This is public and open to everyone who wants to browse the service.
-(Button browse)
-<table>
-<tr>
-    <th scope="row">News</th>
-    <td><a href="subscribe.by.email">Subscribe by email</a></td>
-    <td><a href="subscribe.by.feed">Subscribe by feed</a></td>
-    <td><a href="see.all">Subscribe by email</a>See all</td>
-</tr>
-</table>
+<div class="about-explore">
+   <h3>Explore open source projects on Sonarcloud<h3>
+    SonarCloud offers free acces sto analyze open sources projects. <br />
+    This is public and open to everyone who wants to browse the service.
+    <a class="btn" href="browse.me">Browse</a>
+</div>
+<div class="about-news">
+<span class="about-news-news">News</span>
+<a href="subscribe.by.email">Subscribe by email</a>
+<a href="subscribe.by.feed">Subscribe by feed</a>
+<a href="see.all">Subscribe by email</a>See all</a>
+</div>
