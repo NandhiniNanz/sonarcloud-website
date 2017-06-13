@@ -102,7 +102,7 @@
     > li {
       list-style: none;
       position: relative;
-      background-color: $grey-color-light;
+      background-color: $black200;
       margin: 40px 0 0 0px;
       padding: 10px 0 20px;
       font-size: 16px;
@@ -123,11 +123,11 @@
         width: 40px;
         height: 40px;
         line-height: 40px;
-        background-color: $grey-color-dark;
-        border-radius: 10px;
+        background-color: $orange500;
+        border-radius: 20px;
         font-size: 20px;
         font-weight: 400;
-        color: $orange500;
+        color: #fff;
         position: absolute;
         left: -15px;
         top: -15px;
@@ -136,8 +136,9 @@
         z-index: 100;
       }
       &.question:after {
-          background-color: $grey-color-light;
-          color: $grey-color-dark !important;
+          background-color: #fff;
+          border: $orange500 1px solid;
+          color: $orange500 !important;
       }
     }
   }
