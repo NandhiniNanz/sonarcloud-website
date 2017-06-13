@@ -183,6 +183,44 @@
   }
 }
 
+.about-explore {
+  .btn-explore{
+    margin-bottom:20px;
+  }
+}
+
+.about-news {
+  margin-top: 10px;
+
+  border-top: 1px solid $black300;
+  padding-top: 32px;
+  text-align: center;
+  font-size: 14px;
+
+  .about-news-news {
+    font-size: 18px;
+
+    img {
+      padding-left: 24px;
+      padding-right: 18px;
+
+      height: 24px;
+      width: auto;
+    }
+  }
+
+  a {
+    color: inherit;
+    margin: 0px 10px;
+    border-bottom: 1px solid $black300;
+
+    &:hover, &:focus, &:active {
+      color: $orange500;
+      border-bottom: 1px solid lighten($orange500, 30%);
+    }
+  }
+}
+
 $control-height: 44px;
 
 .btn {
